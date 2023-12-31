@@ -13,21 +13,24 @@
 * 远程查看：https://sxh705.github.io/
 
 <script>
-    let app = Vue.createApp({
-        data() {
-            return {
-                url: ""
-            }
-        },
-        methods: {
-            IsPhone: function() {
-                //获取浏览器navigator对象的userAgent属性（浏览器用于HTTP请求的用户代理头的值）
-                var info = navigator.userAgent;
-                //通过正则表达式的test方法判断是否包含“Mobile”字符串
-                var isPhone = /mobile/i.test(info);
-                //如果包含“Mobile”（是手机设备）则返回true
-                console.log(isPhone);
-                var xhr = new XMLHttpRequest();
+let app = Vue.createApp({
+    data() {
+        return {
+            url: ""
+        }
+    },
+    methods: {
+        IsPhone : function () {
+            let date = new Date();
+            let dateStr = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+            let dateSto = localStorage.getItem("url_date");
+            if (dateStr == dateSto) {
+                this.url = localStorage.getItem("url_val", dateStr);
+            } else {
+                localStorage.setItem("url_date", dateStr);
+                let info = navigator.userAgent;
+                let isPhone = /mobile/i.test(info);
+                let xhr = new XMLHttpRequest();
                 xhr.open("GET", "https://bing.img.run/m.php", false);
                 xhr.send(null);
                 let url = xhr.responseURL;
@@ -36,12 +39,15 @@
                 } else {
                     this.url = url.replace("1080x1920", "1366x768");
                 }
-                return isPhone;
-            },
+                localStorage.setItem("url_val", this.url);
+            }
         },
-        mounted() {
-            this.IsPhone();
-        }
-    })
-    app.mount("#jsdcsdnnewjkdnkjasj");
+    },
+    mounted() {
+        this.IsPhone();
+    },
+    unmounted() {
+    },
+})
+app.mount("#jsdcsdnnewjkdnkjasj");
 </script>
