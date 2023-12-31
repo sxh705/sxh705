@@ -24,9 +24,7 @@
             return {
                 count: 5,
                 message: "message",
-                store: window.sxhGl.store,
-                count1: window.sxhGl.count1,
-                count2: window.sxhGl.count2
+                ...window.sxhGl,
             }
         },
     }).mount("#sxh_app");
