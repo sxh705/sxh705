@@ -9,6 +9,7 @@
         <p>
             <button @click="clean">清除</button>
         </p>
+        {{message}}
     </div>
 </div>
 
@@ -28,6 +29,7 @@
                 state: 0,
                 view_timeAll: 0, //视图总时间
                 view_timeNow: 0, //视图当前时间
+                message: "message",
             }
         },
         computed: {
