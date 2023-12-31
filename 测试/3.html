@@ -4,12 +4,12 @@
         <p>now {{view_timeNow}}</p>
         <p>times {{freq}}</p>
         <p>
-            <button  :class="bclass" @click="switxh">{{btn}}</button>
+            <button :class="bclass" @click="switxh">{{btn}}</button>
         </p>
         <p>
             <button @click="clean">清除</button>
         </p>
-        {{message}}
+        <p v-html="message"></p>
     </div>
 </div>
 
@@ -21,6 +21,11 @@
     let timerId = setTimeout(() => {
     }, 0) //更改颜色的timer
     let a = null;
+    let xlog = x => {
+        setTimeout(() => {
+            a.message += `${x}<br>`;
+        }, 500);
+    }
     Vue.createApp({
         data: () => {
             return {
@@ -29,7 +34,7 @@
                 state: 0,
                 view_timeAll: 0, //视图总时间
                 view_timeNow: 0, //视图当前时间
-                message: "message",
+                message: "message<br>",
             }
         },
         computed: {
@@ -77,6 +82,8 @@
                 localStorage.setItem('timeAll', "0");
                 timeAll = 0;
             }
+            console.log(timeAll)
+            xlog(timeAll)
         },
         mounted() {
             cov = (lefttime) => {
@@ -112,7 +119,7 @@
             f();
             setInterval(f, 100);
             // 不能用箭头函数，否则找不到this
-            // 多层函数也会导致this进不去，提前设置一个a=this.
+            // 多层函数也会导致this进不去，提前设置一个a = this.
         },
         watch: {}
     }).mount('#sxh_app')
@@ -124,18 +131,22 @@
         line-height: 200%;
         height: 800px
     }
+
     .c_0 {
         background-color: rgb(160, 255, 160);
         color: rgb(0, 0, 0);
     }
+
     .c_1 {
         background-color: rgb(255, 160, 160);
         color: rgb(0, 0, 0);
     }
+
     .c_2 {
         background-color: rgb(160, 160, 255);
         color: rgb(0, 0, 0);
     }
+
     button {
         font-size: 20px;
     }
