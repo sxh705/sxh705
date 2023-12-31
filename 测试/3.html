@@ -64,12 +64,17 @@
                 if (confirm("确认清除吗？")) {
                     a.stop();
                     timeAll = 0;
+                    localStorage.setItem('timeAll', timeAll);
                 }
             }
         },
         beforeCreate() {
             a = this;
             timeAll = parseFloat(localStorage.getItem('timeAll'));
+            if (Object.is(timeAll, NaN)) {
+                localStorage.setItem('timeAll', "0");
+                timeAll = 0;
+            }
         },
         mounted() {
             cov = (lefttime) => {
