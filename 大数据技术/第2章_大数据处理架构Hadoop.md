@@ -1,4 +1,4 @@
-# 第2章 大数据处理架构Hadoop
+# 第2章_大数据处理架构Hadoop
 
 # 试描述Hadoop和谷歌的mapreduce,gfs等技术之间的关系。
 
