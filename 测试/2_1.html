@@ -20,7 +20,7 @@
 
 <script>
     Vue.createApp({
-        data: () => {
+        data() {
             return {
                 count: 5,
                 message: "message",
@@ -29,6 +29,12 @@
                 count2: window.sxhGl.count2
             }
         },
+        mounted() {
+            console.log(111)
+            this.count2 = 500;
+            window.sxhGl.count1 = 6;
+            // window.sxhGl.count2.value = 7;
+        }
     }).mount("#sxh_app");
 </script>
 
