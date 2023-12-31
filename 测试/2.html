@@ -1,0 +1,26 @@
+<div id="sxh_app">
+    <h2>二级标题</h2>
+    <p>
+        <button @click="count--">-</button>
+        {{ count }}
+        <button @click="count++">+</button>
+    <p v-for="i in Math.max(count,0)">Item {{ i }}</p>
+    </p>
+    <p>
+        {{ message }}
+        <input v-model="message"/>
+    </p>
+</div>
+
+<script>
+    Vue.createApp({
+        data: () => {
+            return {
+                count: 5,
+                message: "message",
+            }
+        },
+    }).mount("#sxh_app");
+</script>
+
+

@@ -9,19 +9,18 @@
     <!-- Replace with your own title and description. -->
     <title>sxh705的个人博客</title>
     <meta name="description" content="An awesome docsify site for publishing some content on the web.">
-
     <!-- Default Theme (see https://docsify.js.org/#/themes) -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 
 <body>
 <div id="app">加载中</div>
-<!-- Development vue3 -->
 <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
-<script src="vueOption.js"></script>
+<script src="global.js"></script>
 <script>
     // Docsify Configuration (see https://docsify.js.org/#/configuration)
     window.$docsify = {
+        // vueGlobalOptions,
         name: 'sxh705的个人博客',
         // Sidebar Configuration
         auto2top: true,
@@ -39,7 +38,9 @@
         alias: {
             '/.*/_sidebar.md': '/_sidebar.md'
         },
-        vueGlobalOptions,
+        global: {
+
+        }
     };
 </script>
 <!-- Required -->
