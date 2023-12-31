@@ -22,9 +22,8 @@
     }, 0) //更改颜色的timer
     let a = null;
     let xlog = x => {
-        setTimeout(() => {
-            a.message += `${x}<br>`;
-        }, 500);
+        date = new Date()
+        a.message += `[${date.toLocaleString('zh-CN', {timeZone: 'Asia/Shanghai'})}] ${x}<br>`;
     }
     Vue.createApp({
         data: () => {
@@ -34,7 +33,7 @@
                 state: 0,
                 view_timeAll: 0, //视图总时间
                 view_timeNow: 0, //视图当前时间
-                message: "message<br>",
+                message: "console<br>",
             }
         },
         computed: {
@@ -57,13 +56,16 @@
                 a.freq++;
                 a.state = 1;
                 timeStampNow = Date.now();
+                xlog(`a.state = ${a.state}`)
                 clearTimeout(a.timerId);
                 timerId = setTimeout(() => {
                     a.state = 2;
+                    xlog(`a.state = ${a.state}`)
                 }, timeOut);
             },
             stop() {
                 a.state = 0;
+                xlog(`a.state = ${a.state}`)
                 timeAll += Date.now() - timeStampNow;
                 localStorage.setItem('timeAll', timeAll);
             },
@@ -82,10 +84,10 @@
                 localStorage.setItem('timeAll', "0");
                 timeAll = 0;
             }
-            console.log(timeAll)
-            xlog(timeAll)
         },
         mounted() {
+            xlog(`timeAll = ${timeAll}`)
+            xlog(`a.state = ${a.state}`)
             cov = (lefttime) => {
                 //lefttime 距离结束时间的毫秒数
                 let leftd = Math.floor(lefttime / (1000 * 60 * 60 * 24));
@@ -115,9 +117,13 @@
                 // a.view_timeAll = (tAll / 1000).toFixed(1);
                 a.view_timeAll = cov(tAll)
                 a.view_timeNow = cov1(tNow)
+                if (a.state == 0) {
+                    setTimeout(f, 2000);
+                } else {
+                    setTimeout(f, 100);
+                }
             }
             f();
-            setInterval(f, 100);
             // 不能用箭头函数，否则找不到this
             // 多层函数也会导致this进不去，提前设置一个a = this.
         },
