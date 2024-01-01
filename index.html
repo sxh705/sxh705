@@ -16,7 +16,7 @@
 <body>
 <div id="app">加载中</div>
 <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
-<script src="global.js"></script>
+<script src="src/global.js"></script>
 <script>
     // Docsify Configuration (see https://docsify.js.org/#/configuration)
     window.$docsify = {
@@ -38,11 +38,13 @@
         },
         alias: {
             '/.*/_sidebar.md': '/_sidebar.md'
-        },
-        global: {
-
         }
     };
+
+    if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('src/sw.js')
+    }
+
 </script>
 <!-- Required -->
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
