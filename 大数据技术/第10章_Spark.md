@@ -80,7 +80,17 @@ Spark可运行于独立的集群模式中，或者运行于Hadoop中，也可运
 
 
 
-## Spark
+## Spark对RDD的操作主要分为行动（Action）和转换（Transformation）两种类型，两种操作的区别是什么？
+
+### 行动：用于执行计算并制定输出的格式
+
+### 转换：指定RDD之间的相互依赖关系
+
+### 主要区别：
+
+转换操作（如map、filter、groupBy、join等）接受RDD并返回RDD，
+
+而行动操作（如count、collect等）接受RDD但是返回非RDD（即输出一个值或结果）
 
 
 

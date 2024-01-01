@@ -15,13 +15,10 @@
 
 <body>
 <div id="app">加载中</div>
-<script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
-<script src="src/global.js"></script>
 <script>
     // Docsify Configuration (see https://docsify.js.org/#/configuration)
     window.$docsify = {
         coverpage: true,
-        // vueGlobalOptions,
         name: 'sxh705的个人博客',
         // Sidebar Configuration
         auto2top: false,
@@ -40,25 +37,54 @@
         //     '/.*/_sidebar.md': '/_sidebar.md'
         // }
     };
-
-    if (typeof navigator.serviceWorker !== 'undefined') {
-        navigator.serviceWorker.register('src/sw.js')
-    }
-
 </script>
 <!-- Required -->
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 <!-- Recommended -->
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+<!-- Self Setting -->
 </body>
+<script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+<script src="src/global.js"></script>
+<script src="src/cover.js"></script>
 <style>
     .markdown-section {
         max-width: 100%;
     }
+
     strong {
         font-weight: 900 !important;
         color: red !important;
     }
+
+    .sidebar-toggle {
+        border-radius: 10px;
+    }
+
+    /*pc*/
+    @media screen and (orientation: landscape) {
+        .sidebar-toggle {
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+
+        .close .sidebar-toggle {
+            background-color: rgba(0, 0, 0, 0.1#0);
+        }
+    }
+
+    /*手机*/
+    @media screen and (orientation: portrait) {
+        .sidebar-toggle {
+            background-color: rgba(0, 0, 0, 0.10);
+        }
+
+        .close .sidebar-toggle {
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+    }
+
+    /*    https://developer.mozilla.org/zh-CN/docs/Web/CSS/Child_combinator 子组合器*/
+    /*    https://developer.mozilla.org/zh-CN/docs/Web/CSS/Descendant_combinator 后代选择器*/
 </style>
 </html>
