@@ -3,7 +3,3 @@
 <div id="jsdcsdnnewjkdnkjasj">
 <p><img :src="url" alt=""></p>
 </div>
-
-<script>
-alert(1)
-</script>

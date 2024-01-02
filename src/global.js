@@ -15,5 +15,4 @@
     if (typeof navigator.serviceWorker !== 'undefined') {
         navigator.serviceWorker.register('src/sw.js')
     }
-
 })()
