@@ -52,9 +52,16 @@ let sxh_cover;
 
     sxh_cover = (hook, vm) => {
         hook.doneEach(() => {
-            // console.log("cover" + i++);
             cover();
         })
+
+        hook.init(() => {
+            let url = window.location.href;
+            if (url.endsWith("/#/note")) {
+                window.location.href = url + "/"
+            }
+        })
+
     }
 
 }
