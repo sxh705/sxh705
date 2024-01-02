@@ -54,14 +54,6 @@ let sxh_cover;
         hook.doneEach(() => {
             cover();
         })
-
-        hook.init(() => {
-            let url = window.location.href;
-            if (url.endsWith("/#/note")) {
-                window.location.href = url + "/"
-            }
-        })
-
     }
 
 }

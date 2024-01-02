@@ -23,7 +23,14 @@ let _404 = () => {
             return {sec: 2000}
         },
         mounted() {
-            let step = 10;
+
+            let url = window.location.href;
+            if (url.endsWith("/#/note")) {
+                window.location.href = url + "/";
+                return;
+            }
+
+            let step = 100;
             let f = () => {
                 setTimeout(() => {
                     if (this.sec > 0) {
