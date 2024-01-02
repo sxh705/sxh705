@@ -5,11 +5,11 @@ let sxh_cover;
     let cover = () => {
         if (!window.location.href.endsWith("/#/")) return;
         if (document.querySelector("#jsdcsdnnewjkdnkjasj") == null) {
-            console.log("coverTO！")
+            // console.log("coverTO！")
             setTimeout(cover, 100);
             return;
         }
-        console.log("coverTIn")
+        // console.log("coverTIn")
         let app = Vue.createApp({
             data() {
                 return {
@@ -52,7 +52,7 @@ let sxh_cover;
 
     sxh_cover = (hook, vm) => {
         hook.doneEach(() => {
-            console.log("cover" + i++);
+            // console.log("cover" + i++);
             cover();
         })
     }
