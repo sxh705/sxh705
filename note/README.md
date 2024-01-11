@@ -21,4 +21,11 @@ bash>  [Environment]::GetEnvironmentVariable('Path', 'Machine')
 
 搜索技术带上`详解`两个字 这样搜出来比较系统
 
-下午面试. 
+下午面试. 准备java八股文
+
+10点走11点到
+
+下午跑步
+
+关闭网站首页显示? 浪费时间
+
