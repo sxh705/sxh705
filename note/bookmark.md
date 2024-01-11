@@ -1,47 +1,81 @@
-
-百度 https://www.baidu.com
-
-谷歌 https://www.google.com
+## 鸡汤
 
 如何才能停止精神内耗？ - 虎山行不行的回答 - 知乎
-
 https://www.zhihu.com/question/558735425/answer/3320199293
 
-
-
-【2023.12.5更新】【坤_Tools】word转pdf、pdf转word、替换内容、转换图片、合并图
-
-https://www.52pojie.cn/thread-1769111-1-1.html#46252773_下载地址
-
-https://pan.baidu.com/s/1EizO3_JfOEduOiH7xzIoGA?pwd=6666#list/path=%2F坤Tools版本发布
-
 为什么说「太用力的人走不远」？ - 珮鸣悠扬的回答 - 知乎
-
 https://www.zhihu.com/question/38347269/answer/3343299001
 
-scoop java版本管理工具
+## 工具
 
+【2023.12.5更新】【坤_Tools】word转pdf、pdf转word、替换内容、转换图片、合并图
+https://www.52pojie.cn/thread-1769111-1-1.html#46252773_
+
+## java
+
+### java工具
+
+scoop java版本管理工具
 https://www.thisfaner.com/p/install-and-switch-versions-of-java-python-ruby-via-scoop/
 
-https://juejin.cn/post/7125582103382589476
-
 mybatis plus
-
+https://juejin.cn/post/7125582103382589476
 https://baomidou.com/pages/779a6e/#%E5%AE%89%E8%A3%85
-
 https://blog.csdn.net/Zack_tzh/article/details/107487209
 
 springboot请求参数
-
 https://www.hangge.com/blog/cache/detail_2485.html
 
 satoken
-
 https://sa-token.cc/doc.html#/use/login-auth?id=登录认证
 
 element plus
-
 https://element-plus.gitee.io/zh-CN/component/notification.html#%E6%BA%90%E4%BB%A3%E7%A0%81
+
+awsome java
+[akullpp/awesome-java: A curated list of awesome frameworks, libraries and software for the Java programming language. (github.com)](https://github.com/akullpp/awesome-java)
+
+### java八股
+
+文件url: java面试指北PDF版本（最新）苏欣昊整理2024年1月12日
+
+java guide
+https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#bean-%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%9C%89%E5%93%AA%E4%BA%9B
+
+书栈网
+https://www.bookstack.cn/
+
+网站推荐集合
+https://zhuanlan.zhihu.com/p/545561495
+
+https://www.r2coding.com/#/README
+
+https://zhuanlan.zhihu.com/p/633490483 **java学习 重要**
+
+https://mp.weixin.qq.com/s/nhqg9RqaHQ_TpBLaJGyXww 公众号作者
+
+小林coding
+https://xiaolincoding.com/
+
+王二
+https://javabetter.cn/
+
+互联网java工程师进阶
+https://doocs.github.io/advanced-java/#/?id=%e4%ba%92%e8%81%94%e7%bd%91-java-%e5%b7%a5%e7%a8%8b%e5%b8%88%e8%bf%9b%e9%98%b6%e7%9f%a5%e8%af%86%e5%ae%8c%e5%85%a8%e6%89%ab%e7%9b%b2
+
+java全栈知识体系 **精华**
+https://pdai.tech/
+
+52it
+https://52it.cc/
+
+得物技术博客
+https://my.oschina.net/u/5783135/blog/10319533
+
+阿里阿尔萨斯 
+https://arthas.aliyun.com/doc/
+
+## golang
 
 go文档
 
@@ -77,6 +111,8 @@ golang 圣经 https://books.studygolang.com/gopl-zh/ch9/ch9-05.html
 
 不该使用golang析构函数 https://stackoverflow.com/questions/32768243/go-destructors/32781054#32781054
 
+## 博客
+
 博客:
 
 可能吧 https://dmesg.app/reason-of-this-blog.html
@@ -86,14 +122,11 @@ clash https://www.eaimty.com/2020/do-not-let-your-blog-exist-only-in-the-interne
 
 小土豆 https://dmesg.app/reason-of-this-blog.html
 
-阿里阿尔萨斯 https://arthas.aliyun.com/doc/
+golang 宏
 
- golang 宏
+https://go.dev/blog/generate
 
- https://go.dev/blog/generate
-
- https://zhuanlan.zhihu.com/p/358758940?utm_id=0
-
+https://zhuanlan.zhihu.com/p/358758940?utm_id=0
 
 https://zhuanlan.zhihu.com/p/54123005?utm_id=0
 
@@ -104,52 +137,3 @@ awsome golang
 golang gui: https://github.com/wailsapp/wails?tab=readme-ov-file
 
 [avelino/awesome-go: A curated list of awesome Go frameworks, libraries and software (github.com)](https://github.com/avelino/awesome-go)
-
-awsome java
-
-[akullpp/awesome-java: A curated list of awesome frameworks, libraries and software for the Java programming language. (github.com)](https://github.com/akullpp/awesome-java)
-
-
-java guide 
-https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#bean-%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%9C%89%E5%93%AA%E4%BA%9B
-
-书栈网
-https://www.bookstack.cn/
-
-网站推荐集合
-https://zhuanlan.zhihu.com/p/545561495
-
-https://www.r2coding.com/#/README
-
-https://zhuanlan.zhihu.com/p/633490483 **java学习 重要**
-
-https://mp.weixin.qq.com/s/nhqg9RqaHQ_TpBLaJGyXww 公众号作者
-
-小林coding
-
-https://xiaolincoding.com/
-
-王二
-
-https://javabetter.cn/
-
-互联网java工程师进阶
-
-https://doocs.github.io/advanced-java/#/?id=%e4%ba%92%e8%81%94%e7%bd%91-java-%e5%b7%a5%e7%a8%8b%e5%b8%88%e8%bf%9b%e9%98%b6%e7%9f%a5%e8%af%86%e5%ae%8c%e5%85%a8%e6%89%ab%e7%9b%b2
-
-
-
-java全栈知识体系 **精华**
-
-https://pdai.tech/
-
-52it
-
-https://52it.cc/
-
-
-
-
-https://my.oschina.net/u/5783135/blog/10319533
-
-得物 虚拟线程
