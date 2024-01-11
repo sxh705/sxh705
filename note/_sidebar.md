@@ -1,10 +1,10 @@
-* [首页(兼日记)](/note/)
+* [readme(diary)](/note/README.md)
 
-* [收藏](bookmark.md)
+* [bookmark](/note/bookmark.md)
 
-* 测试
-    * [1](/note/测试/1.md)
-    * [2](/note/测试/2.html)
-    * [2](/note/测试/2_1.html)
-    * [秒表](/note/测试/3.html)
+* test
+    * [1](/note/test/1.md)
+    * [2](/note/test/2.html)
+    * [2_1](/note/test/2_1.html)
+    * [stopWatch](/note/test/stopWatch.html)
 

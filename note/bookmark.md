@@ -20,7 +20,9 @@ https://www.thisfaner.com/p/install-and-switch-versions-of-java-python-ruby-via-
 
 mybatis plus
 https://juejin.cn/post/7125582103382589476
+
 https://baomidou.com/pages/779a6e/#%E5%AE%89%E8%A3%85
+
 https://blog.csdn.net/Zack_tzh/article/details/107487209
 
 springboot请求参数
@@ -32,12 +34,12 @@ https://sa-token.cc/doc.html#/use/login-auth?id=登录认证
 element plus
 https://element-plus.gitee.io/zh-CN/component/notification.html#%E6%BA%90%E4%BB%A3%E7%A0%81
 
-awsome java
-[akullpp/awesome-java: A curated list of awesome frameworks, libraries and software for the Java programming language. (github.com)](https://github.com/akullpp/awesome-java)
+awsome java https://github.com/akullpp/awesome-java
 
 ### java八股
 
-文件url: java面试指北PDF版本（最新）苏欣昊整理2024年1月12日
+**MR中的文件**: `java面试指北PDF版本（最新）苏欣昊整理2024年1月12日`
+备份存放于阿里云盘 和 E(6TB)
 
 java guide
 https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#bean-%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%9C%89%E5%93%AA%E4%BA%9B
@@ -50,9 +52,7 @@ https://zhuanlan.zhihu.com/p/545561495
 
 https://www.r2coding.com/#/README
 
-https://zhuanlan.zhihu.com/p/633490483 **java学习 重要**
-
-https://mp.weixin.qq.com/s/nhqg9RqaHQ_TpBLaJGyXww 公众号作者
+ **java博客 重要** https://zhuanlan.zhihu.com/p/633490483
 
 小林coding
 https://xiaolincoding.com/
@@ -63,7 +63,7 @@ https://javabetter.cn/
 互联网java工程师进阶
 https://doocs.github.io/advanced-java/#/?id=%e4%ba%92%e8%81%94%e7%bd%91-java-%e5%b7%a5%e7%a8%8b%e5%b8%88%e8%bf%9b%e9%98%b6%e7%9f%a5%e8%af%86%e5%ae%8c%e5%85%a8%e6%89%ab%e7%9b%b2
 
-java全栈知识体系 **精华**
+**精华** java全栈知识体系
 https://pdai.tech/
 
 52it
@@ -77,15 +77,11 @@ https://arthas.aliyun.com/doc/
 
 ## golang
 
-go文档
-
-https://golang.org
+go文档 https://golang.org
 
 https://studygolang.com/pkgdoc
 
-go 菜鸟教程
-
-https://www.runoob.com/go/go-environment.html
+go 菜鸟教程 https://www.runoob.com/go/go-environment.html
 
 golang 课程: https://www.bilibili.com/video/BV1Pg41187AS
 
@@ -113,27 +109,25 @@ golang 圣经 https://books.studygolang.com/gopl-zh/ch9/ch9-05.html
 
 ## 博客
 
-博客:
-
 可能吧 https://dmesg.app/reason-of-this-blog.html
 
 clash https://www.eaimty.com/2020/do-not-let-your-blog-exist-only-in-the-internet-archive/
+
 落格 https://www.logcg.com/archives/836.html
 
 小土豆 https://dmesg.app/reason-of-this-blog.html
 
-golang 宏
-
-https://go.dev/blog/generate
+golang 宏 https://go.dev/blog/generate
 
 https://zhuanlan.zhihu.com/p/358758940?utm_id=0
 
-https://zhuanlan.zhihu.com/p/54123005?utm_id=0
+golang内存 https://zhuanlan.zhihu.com/p/54123005?utm_id=0
 
-golang内存
 
 awsome golang
 
 golang gui: https://github.com/wailsapp/wails?tab=readme-ov-file
 
 [avelino/awesome-go: A curated list of awesome Go frameworks, libraries and software (github.com)](https://github.com/avelino/awesome-go)
+
+从0开始学golang微服务 https://learn.lianglianglee.com/极客时间/从0开始学微服务.md
