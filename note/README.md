@@ -29,3 +29,5 @@ bash>  [Environment]::GetEnvironmentVariable('Path', 'Machine')
 
 关闭网站首页显示? 浪费时间
 
+springboot aop详解 https://www.cnblogs.com/Andya/p/12685428.html
+
