@@ -6,6 +6,9 @@ https://www.zhihu.com/question/558735425/answer/3320199293
 为什么说「太用力的人走不远」？ - 珮鸣悠扬的回答 - 知乎
 https://www.zhihu.com/question/38347269/answer/3343299001
 
+知乎复旦焦虑哥
+https://www.zhihu.com/people/chen-xing-hao-96/answers/by_votes?page=2
+
 ## 工具
 
 【2023.12.5更新】【坤_Tools】word转pdf、pdf转word、替换内容、转换图片、合并图
