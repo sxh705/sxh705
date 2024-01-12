@@ -21,6 +21,8 @@ bash>  [Environment]::GetEnvironmentVariable('Path', 'Machine')
 
 # 2024年1月12日
 
+架构课 https://time.geekbang.org/opencourse/intro/100064201
+
 搜索技术带上`详解`两个字 这样搜出来比较系统
 
 下午面试. 准备java八股文
@@ -31,7 +33,7 @@ bash>  [Environment]::GetEnvironmentVariable('Path', 'Machine')
 
 12.30睡觉
 
-13.20 走 14.30 到
+13.20 走 14.20 到
 
 下午跑步
 
@@ -189,20 +191,45 @@ https://javaguide.cn/system-design/framework/spring/spring-common-annotations.ht
 参数校验:
 https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247485783&idx=1&sn=a407f3b75efa17c643407daa7fb2acd6&chksm=cea2469cf9d5cf8afbcd0a8a1c9cc4294d6805b8e01bee6f76bb2884c5bc15478e91459def49&token=292197051&lang=zh_CN#rd
 
+通过value注解读取简单配置信息
 
+通过configurationProperties读取并
 
+可以像普通bean一样注入类使用
 
+### 通过pofileProperties校验类
 
+### 如何进行spring监控?
 
+springboot actuator 自带状态api
 
+### 参数校验
 
+@null
+@notnull
+@assertture
+@assertfalse
+@min
+@max
+@decimalmin
+@size
+@digits
+@past
+@future
+@pattern
 
+@notblank
+@email
+@length
+@notempty
+@range
+@valid
 
+### 定时任务?
 
+@enablescheduing作用与启动类, 启动定时任务.
 
-
-
-
+scheduled注解可以创建任务
 
 
 ## mysql
@@ -261,3 +288,171 @@ quwey cache size
 
 通过锁和mvcc机制实现
 
+## java
+
+### 为什么编译与解释并存?
+
+编译型语言会通过贬义词一次性编译成可被平台执行的机器码,执行速度快,开发效率低 c c++ rust
+
+解释型语言会通过解释器解释执行 python JavaScript php等
+
+java既有编译特征也有解释特性
+
+### 成员变量和局部变量?
+
+成员变量是属于类的, 局部变量是在代码块或方法中定义的变量
+
+对象存在于堆, 局部变量存在于栈
+
+### 重载和重写的区别?
+
+重载就是一个方法能根据输入不同做不同处理
+
+重写是子类覆盖父类方法.
+
+### 可变参数
+
+作为函数的最后一个参数.
+
+在编译时转换为数组.
+
+### 基本类型
+
+byte short int long float double
+char
+boolean
+
+### 自动装箱?
+
+Integer i = 10 装箱
+int j = i 拆箱
+
+尽量避免大量拆箱装箱操作, 这样会生成大量对象
+
+### 浮点精度维问题, 超过long的数据?
+
+二进制截断
+
+使用BigDecimal和BigInteger
+
+### 没有构造函数的类?
+
+会自动添加 默认构造函数
+
+### 面向对象的三大特点
+
+#### 封装:
+
+把对象的状态隐藏在对象内部, 不允许外部直接访问, 但是提供方法来操作,如果属性不想提供就不提供.
+
+#### 继承:
+
+不同类型的对象,有一定共同点,
+
+1. 子类拥有父类的属性 父类的私有属性子类不能访问
+
+2. 子类可以对父类拓展
+
+3. 子类可以用自己的方式实现父类方法
+
+(组合优于继承, 因为继承会带来不必要耦合性?)
+
+实现接口比较好. 接口特性的组合
+
+具体: https://blog.csdn.net/fuzhongmin05/article/details/108646872
+
+#### 多态:
+
+一个对象具有多种状态, 父类的引用指向子类的实例.
+
+对象类型和引用类型有继承和实现的关系
+
+### 深拷贝和浅拷贝?
+
+浅拷贝会在堆创建一个新对象
+
+深拷贝会复制整个对象和内部对象.
+
+### == 和 equals
+
+== 比较地址
+
+equals 比较值
+
+## 多线程
+
+### 虚拟线程
+
+使用虚拟线程需要避免同步块和同步方法:
+https://blog.fastthread.io/2023/02/28/pitfalls-to-avoid-when-switching-to-virtual-threads/
+
+使用reentrantlock替代
+
+## 设计模式
+
+### 创建型:
+
+创建对象的同时隐藏创建逻辑 不用new实例化对象
+
+* 工厂模式
+
+    * 抽象工厂
+
+    通过产品接口实现增加产品
+
+* 单例模式
+
+一个单例一个实例, 减少开销
+
+懒加载 使用时创建对象, 私有化构造方法.
+
+懒加载 + 同步锁 + 双重验证, 线程安全
+
+
+* 建造者模式
+
+* 原型模式
+
+
+### 结构型:
+
+通过类和接口继承创建复杂对象
+
+* 适配器
+
+* 桥接
+
+* 过滤器
+
+* 外观
+
+* 享元
+
+* 代理
+
+### 行为型
+
+* 责任链
+
+* 命名
+
+* 解释器
+
+* 迭代器
+
+* 中介者
+
+* 备忘录
+
+* 观察者
+
+* 状态
+
+* 策略
+
+* 模板
+
+* 访问者
+
+
+# end
