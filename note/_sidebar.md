@@ -1,4 +1,4 @@
-* [readme(diary)](/note/README.md)
+* [readme(diary)](/note/)
 
 * [bookmark](/note/bookmark.md)
 
