@@ -1,6 +1,6 @@
 博客部署完成 2023.12.15
 
-[首页](/)
+## [首页](/)
 
 https://docsify.js.org/#/zh-cn/quickstart
 
