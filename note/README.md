@@ -1,5 +1,7 @@
 博客部署完成 2023.12.15
 
+[首页](/)
+
 https://docsify.js.org/#/zh-cn/quickstart
 
 D:\Codes\IDEAprj\java_project_study\sxh705.github.io\
