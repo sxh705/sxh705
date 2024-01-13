@@ -1,6 +1,8 @@
 博客部署完成 2023.12.15
 
-# [首页](/)
+* [首页](/)
+
+* [test](/test/)
 
 https://docsify.js.org/#/zh-cn/quickstart
 
@@ -832,5 +834,4 @@ https://www.moxingzu.com/a/2020-02-05/113598.html
 
 # git详解
 
-https://pdai.tech/md/devops/tool/tool-git.html
-
+https://www.liaoxuefeng.com/wiki/896043488029600

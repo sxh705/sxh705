@@ -134,3 +134,11 @@ golang gui: https://github.com/wailsapp/wails?tab=readme-ov-file
 [avelino/awesome-go: A curated list of awesome Go frameworks, libraries and software (github.com)](https://github.com/avelino/awesome-go)
 
 从0开始学golang微服务 https://learn.lianglianglee.com/极客时间/从0开始学微服务.md
+
+## 深度学习 
+
+动手深度学习
+
+https://zh-v2.d2l.ai/
+
+## 架构
