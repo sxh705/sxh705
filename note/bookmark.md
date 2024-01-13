@@ -143,7 +143,11 @@ https://zh-v2.d2l.ai/
 
 ## 架构
 
+阿里分布式事务
+https://seata.io/zh-cn/
 
+java架构师笔记 布隆过滤器
+https://zq99299.github.io/note-architect/hc/03/04.html
 
 ## 杂物
 

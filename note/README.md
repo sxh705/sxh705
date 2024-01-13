@@ -461,9 +461,11 @@ https://blog.fastthread.io/2023/02/28/pitfalls-to-avoid-when-switching-to-virtua
 
 任务: 继续学习java八股, 架构. 
 
-# 周志明的软件架构课
+## 周志明的软件架构课
 
-## 开篇词
+https://time.geekbang.org/column/article/337708
+
+### 开篇词
 
 5个模块
 
@@ -479,13 +481,13 @@ https://blog.fastthread.io/2023/02/28/pitfalls-to-avoid-when-switching-to-virtua
 
 深入理解java虚拟机...
 
-## 什么是The Fenix Project:
+### 什么是The Fenix Project:
 
 探索与实践, 开发不同架构的Fenix's BookStore
 
 来源: 布道与分享
 
-### 软件架构探索
+#### 软件架构探索
 
 phoneix 凤凰 软件工厂产物 
 
@@ -509,7 +511,7 @@ phoneix 凤凰 软件工厂产物
 
 都是抽象的架构方法
 
-## 可靠的系统
+### 可靠的系统
 
 构建一个大规模但依然可靠的软件系统, 是否可行?
 
@@ -554,7 +556,7 @@ Fenix's BookStore
 
 复杂的技术是为了演示技术
 
-## 原始分布式时代 unix设计哲学下的服务探索
+### 原始分布式时代 unix设计哲学下的服务探索
 
 架构不是发明, 而是进化的结果
 
@@ -578,7 +580,7 @@ Fenix's BookStore
 
 不可兼顾 简单 透明 性能 正确 鲁棒
 
-### 要解决的问题: 
+#### 要解决的问题: 
 
 服务在哪里 服务发现
 
@@ -609,7 +611,7 @@ Fenix's BookStore
 20世纪80年代 硬件性能2年增长一倍 
 信息系统进入了单体时代
 
-## 单体系统时代
+### 单体系统时代
 
 单体架构为何在想当长的时间内成为主流?
 
@@ -631,7 +633,7 @@ monolithc 巨石 也不是铁板一块
 
 单词系统并不意味着一个程序, 也可以拆分不同的程序
 
-### 非独立的单体
+#### 非独立的单体
 
 单体存在隔离与自治能力的欠缺
 
@@ -655,7 +657,7 @@ monolithc 巨石 也不是铁板一块
 
 soa时代 面向服务的系统拆分.
 
-## soa时代 成功理论与失败实践
+### soa时代 成功理论与失败实践
 
 soa没有成为普适的软件架构
 
@@ -703,7 +705,7 @@ ejb当年作为企业级javabean 仍然被spring hibernate打败了
 
 分布式时代距离透明越来越远了.
 
-## 微服务时代 soa的革命者
+### 微服务时代 soa的革命者
 
 专注于单一职责的 与语言无关的 细粒度的web服务
 
@@ -780,7 +782,7 @@ springcloud的工具集, 通过统一接口, 屏蔽了复杂度
 
 我的产品适合微服务架构吗?
 
-## 后微服务时代
+### 后微服务时代
 
 微服务时代都没法完全避免服务注册 跟踪 负载 传输的问题
 
@@ -832,11 +834,11 @@ https://www.moxingzu.com/a/2020-02-05/113598.html
 
 已重命名为 AcWebBrowser.bak.exe
 
-# git详解
+## git详解
 
 https://www.liaoxuefeng.com/wiki/896043488029600
 
-## 后微服务时代
+### 后微服务时代
 
 基础设施的力度比较粗犷
 
@@ -866,7 +868,11 @@ smart endpoints
 
 微服务只需要考虑业务本身逻辑..
 
-## 无服务架构
+## 周志明的软件架构课
+
+https://time.geekbang.org/column/article/337708
+
+### 无服务架构
 
 分布式架构带来的新问题
 
@@ -904,15 +910,15 @@ iron.in提出无服务概念
 
 封装了服务的维护流程..
 
-# 模块二 架构师的视角
+## 模块二 架构师的视角
 
-## 07 远程服务调用 上 本地到远程的桥梁
+### 07 远程服务调用 上 本地到远程的桥梁
 
 架构师: 软件系统中技术模型的系统设计者
 
 RPC的常见问题.
 
-### 进程间通讯
+#### 进程间通讯
 
 本地方法调用过程
 
@@ -962,10 +968,20 @@ RPS应该是高层次的语言层工具
 
 RPC很多学习了IPC的概念
 
+Fragment 字段是url #后面的字段信息
+
+可以用于做文档内跳转
+
+java字段校验: 使用Java Bean Validation
+
+@Null、@NotNull、@AssertTrue、@AssertFalse、@Min、@Max、@DecimalMin、@DecimalMax、@Negative、@NegativeOrZero、@Positive、@PositiveOrZeor、@Szie、@Digits、@Pass、@PassOrPresent、@Future、@FutureOrPresent、@Pattern、@NotEmpty、@NotBlank、@Email
+
+https://time.geekbang.org/column/article/336798
 
 
+## 分布式基石
 
+### 共识算法
 
-
-
+Paxos算法
 
