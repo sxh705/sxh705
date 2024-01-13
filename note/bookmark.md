@@ -142,3 +142,9 @@ golang gui: https://github.com/wailsapp/wails?tab=readme-ov-file
 https://zh-v2.d2l.ai/
 
 ## 架构
+
+
+
+## 杂物
+
+vsc 调整字体大小 https://blog.csdn.net/u014139753/article/details/111885028
