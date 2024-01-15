@@ -985,3 +985,57 @@ https://time.geekbang.org/column/article/336798
 
 Paxos算法
 
+# 2024年1月14日
+
+2024年1月14日10:36:21
+
+折腾GraalVm Native-Image
+
+此文件为作为全局变量安装
+
+第一步寻找gu.exe
+
+切换到目录
+
+```
+# bash 脚本
+cd C:\Users\23629\scoop\apps\graalvm22-jdk17\22.3.2\lib\installer\bin
+ .\gu.exe list
+```
+
+找native image工具包:
+
+https://github.com/graalvm/graalvm-ce-builds/releases?q=22.3.2&expanded=true
+
+在release界面搜索native-image-installable-svm-java17-windows-amd64
+
+https://www.cnblogs.com/qiyebao/p/14351599.html
+
+https://blog.csdn.net/wangpaiblog/article/details/122422987
+
+native-image -jar JAR 包的路径 打包命令
+
+放弃了, java的依赖问题不是好解决的
+
+相信后人的智慧... 哈哈
+
+继续周志明架构课
+
+## 周志明的软件架构课
+
+https://time.geekbang.org/column/article/337708
+
+课程答题记录 爬虫
+
+```
+let a = []
+document.querySelectorAll('.paper-item-cotainer').forEach(res => {a.push(res.innerText)})
+
+只回复"正确", 或者"错误"
+
+[^\n]*\n[^\n]*\n[^\n]*\n[^\n]*\n[^\n]*\n
+```
+
+([^\n]*\n[^\n]*\n[^\n]*\n[^\n]*\n[^\n]*\n)
+
+\n\n\n\n\n只回复正确选项, 不需要任何解释, 我接下来的五个问题是: \n $1
