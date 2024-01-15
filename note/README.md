@@ -1,29 +1,31 @@
+# 日记
+
 博客部署完成 2023.12.15
 
 * [首页](/)
 
 * [test](/test/)
 
-https://docsify.js.org/#/zh-cn/quickstart
+<https://docsify.js.org/#/zh-cn/quickstart>
 
 D:\Codes\IDEAprj\java_project_study\sxh705.github.io\
 
 # 2024年1月6日
 
-同时开始两个项目, 
+同时开始两个项目,
 这样在一个项目停止的时候可以开始进行另一个
 
 # 2024年1月1日
 
-powershell 不重启更新环境变量: 
+powershell 不重启更新环境变量:
 
-```
-bash>  [Environment]::GetEnvironmentVariable('Path', 'Machine')
+```powershell
+[Environment]::GetEnvironmentVariable('Path', 'Machine')
 ```
 
 # 2024年1月12日
 
-架构课 https://time.geekbang.org/opencourse/intro/100064201
+架构课 <https://time.geekbang.org/opencourse/intro/100064201>
 
 搜索技术带上`详解`两个字 这样搜出来比较系统
 
@@ -43,11 +45,11 @@ bash>  [Environment]::GetEnvironmentVariable('Path', 'Machine')
 
 ## spring
 
-来源: https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#spring-ioc
+来源: <https://javaguide.cn/system-design/framework/spring/spring-knowledge-and-questions-summary.html#spring-ioc>
 
-### springboot aop详解 https://www.cnblogs.com/Andya/p/12685428.html
+### springboot aop详解 <https://www.cnblogs.com/Andya/p/12685428.html>
 
-springboot aop: 
+springboot aop:
 
 切面: 横切多个对象的关注点的一个模块化
 
@@ -55,13 +57,13 @@ springboot aop:
 
 提交记得写消息
 
-### 谈谈自己对于springioc的了解:
+### 谈谈自己对于springioc的了解
 
 ioc将对象之间的相互依赖关系交给ioc容器来管理, 并由ioc容器完成对象的注入
 
 可以很大程度上简化开发
 
-### aop定义的通知类型:
+### aop定义的通知类型
 
 before 前置通知
 
@@ -79,7 +81,7 @@ model1 页面由jsp组成
 
 控制逻辑与表现逻辑混杂
 
-### model2 mvc 
+### model2 mvc
 
 model模型:dao和bean
 
@@ -89,12 +91,11 @@ controller处理请求 操作model
 
 ### springmvc
 
-
 ### 统一异常处理?
 
-spring3.2 
-ControllerAdvice + 
-ExceptionHaldler + 
+spring3.2
+ControllerAdvice +
+ExceptionHaldler +
 ResponseBody
 
 ### spring事务传播
@@ -117,7 +118,7 @@ isolation_default 默认 可重复读
 
 read_uncommited 读未提交 导致脏读 幻读和不可重复读
 
-https://blog.csdn.net/kusedexingfu/article/details/118005261
+<https://blog.csdn.net/kusedexingfu/article/details/118005261>
 
 ## springboot
 
@@ -157,9 +158,9 @@ autoconfigurationimportselector类中getcandidateconfiguration会将自动配置
 自定义的同包同类的bean会覆盖原本的类
 框架定义了ConditionalOnMissingBean注解
 如果你创建了相同bean则不会自动创建了.
-https://blog.csdn.net/gzt19881123/article/details/109333230
+<https://blog.csdn.net/gzt19881123/article/details/109333230>
 
-### rest常用注解:
+### rest常用注解
 
 autowired 自动导入
 
@@ -188,10 +189,10 @@ requestbody 读取request请求的body
 会使用httpmessageconverter转换.
 
 注解详解:
-https://javaguide.cn/system-design/framework/spring/spring-common-annotations.html
+<https://javaguide.cn/system-design/framework/spring/spring-common-annotations.html>
 
 参数校验:
-https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247485783&idx=1&sn=a407f3b75efa17c643407daa7fb2acd6&chksm=cea2469cf9d5cf8afbcd0a8a1c9cc4294d6805b8e01bee6f76bb2884c5bc15478e91459def49&token=292197051&lang=zh_CN#rd
+<https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247485783&idx=1&sn=a407f3b75efa17c643407daa7fb2acd6&chksm=cea2469cf9d5cf8afbcd0a8a1c9cc4294d6805b8e01bee6f76bb2884c5bc15478e91459def49&token=292197051&lang=zh_CN#rd>
 
 通过value注解读取简单配置信息
 
@@ -233,7 +234,6 @@ springboot actuator 自带状态api
 
 scheduled注解可以创建任务
 
-
 ## mysql
 
 mysql提供哪些存储引擎:
@@ -258,18 +258,22 @@ quwey cache size
 
 ### mysql事务
 
-#### 原子性 atomicity 
+#### 原子性 atomicity
+
 事务是最小的执行单位 不允许分割
 事务的原子性确保动作要么全部完成, 要么完全不起作用
 
-#### 一致性 consistency 
+#### 一致性 consistency
+
 执行事务前后 数据保持一直
 转账时 无论业务是否成功, 转账者和和收款人的总额是不变的
 
-#### 隔离性 isolation 
+#### 隔离性 isolation
+
 并发访问数据库时, 一个用户的事务不被其他事务所干扰
 
 #### 持久性
+
 一个事务被提交后, 它对数据库中数据的改变是持久的 即使数据库故障也不应该对其有任何影响
 
 ### 并发事务问题
@@ -343,11 +347,11 @@ int j = i 拆箱
 
 ### 面向对象的三大特点
 
-#### 封装:
+#### 封装
 
 把对象的状态隐藏在对象内部, 不允许外部直接访问, 但是提供方法来操作,如果属性不想提供就不提供.
 
-#### 继承:
+#### 继承
 
 不同类型的对象,有一定共同点,
 
@@ -361,9 +365,9 @@ int j = i 拆箱
 
 实现接口比较好. 接口特性的组合
 
-具体: https://blog.csdn.net/fuzhongmin05/article/details/108646872
+具体: <https://blog.csdn.net/fuzhongmin05/article/details/108646872>
 
-#### 多态:
+#### 多态
 
 一个对象具有多种状态, 父类的引用指向子类的实例.
 
@@ -386,19 +390,19 @@ equals 比较值
 ### 虚拟线程
 
 使用虚拟线程需要避免同步块和同步方法:
-https://blog.fastthread.io/2023/02/28/pitfalls-to-avoid-when-switching-to-virtual-threads/
+<https://blog.fastthread.io/2023/02/28/pitfalls-to-avoid-when-switching-to-virtual-threads/>
 
 使用reentrantlock替代
 
 ## 设计模式
 
-### 创建型:
+### 创建型
 
 创建对象的同时隐藏创建逻辑 不用new实例化对象
 
 * 工厂模式
 
-    * 抽象工厂
+  * 抽象工厂
 
     通过产品接口实现增加产品
 
@@ -410,13 +414,11 @@ https://blog.fastthread.io/2023/02/28/pitfalls-to-avoid-when-switching-to-virtua
 
 懒加载 + 同步锁 + 双重验证, 线程安全
 
-
 * 建造者模式
 
 * 原型模式
 
-
-### 结构型:
+### 结构型
 
 通过类和接口继承创建复杂对象
 
@@ -456,14 +458,13 @@ https://blog.fastthread.io/2023/02/28/pitfalls-to-avoid-when-switching-to-virtua
 
 * 访问者
 
-
 问题: 面试取消了
 
-任务: 继续学习java八股, 架构. 
+任务: 继续学习java八股, 架构.
 
-## 周志明的软件架构课
+## 周志明的软件架构课_1
 
-https://time.geekbang.org/column/article/337708
+<https://time.geekbang.org/column/article/337708>
 
 ### 开篇词
 
@@ -473,7 +474,7 @@ https://time.geekbang.org/column/article/337708
 
 架构师的视角: 架构师思考的问题, 主流方案的特点
 
-分布式的基石: 聚焦在分布式架构, 
+分布式的基石: 聚焦在分布式架构,
 
 不可变基础设施: 按照云原生时代"基础设施即代码"的新思路,带你深入理解基础设施不变性的目的
 
@@ -481,7 +482,7 @@ https://time.geekbang.org/column/article/337708
 
 深入理解java虚拟机...
 
-### 什么是The Fenix Project:
+### 什么是The Fenix Project
 
 探索与实践, 开发不同架构的Fenix's BookStore
 
@@ -489,7 +490,7 @@ https://time.geekbang.org/column/article/337708
 
 #### 软件架构探索
 
-phoneix 凤凰 软件工厂产物 
+phoneix 凤凰 软件工厂产物
 
 出错是正常的
 
@@ -503,7 +504,7 @@ phoneix 凤凰 软件工厂产物
 
 学习语言 框架 spring java vue.js
 
-复杂程序 
+复杂程序
 
 架构方法
 
@@ -542,7 +543,7 @@ phoneix 凤凰 软件工厂产物
 
 微服务架构的视角
 
-如果每个部件都符合phoneix特性, 
+如果每个部件都符合phoneix特性,
 
 即便部件3分钟就会崩溃
 
@@ -580,7 +581,7 @@ Fenix's BookStore
 
 不可兼顾 简单 透明 性能 正确 鲁棒
 
-#### 要解决的问题: 
+#### 要解决的问题
 
 服务在哪里 服务发现
 
@@ -607,15 +608,14 @@ Fenix's BookStore
 > ust because something can be distributed doesn’t mean it should be distributed. Trying to make a distributed call act like a local call always ends in tears.
 >某个功能能够进行分布式，并不意味着它就应该进行分布式，强行追求透明的分布式操作，只会自寻苦果。
 
-
-20世纪80年代 硬件性能2年增长一倍 
+20世纪80年代 硬件性能2年增长一倍
 信息系统进入了单体时代
 
 ### 单体系统时代
 
 单体架构为何在想当长的时间内成为主流?
 
-`巨石系统` 很难找到单体文章, 
+`巨石系统` 很难找到单体文章,
 
 在想当长的时间内, 软件架构都是单体的
 
@@ -643,7 +643,7 @@ monolithc 巨石 也不是铁板一块
 
 共享同样进程获得简单和高效
 
-但是损失了功能的自治和隔离能力, 
+但是损失了功能的自治和隔离能力,
 
 哪个更重要呢
 
@@ -661,49 +661,49 @@ soa时代 面向服务的系统拆分.
 
 soa没有成为普适的软件架构
 
-1. 烟囱式挂钩 系统之间不会进行互操作, 
+1. 烟囱式挂钩 系统之间不会进行互操作,
 
-两个不交互的系统, 可以拆分
+    两个不交互的系统, 可以拆分
 
-但是系统之间总会有交互
+    但是系统之间总会有交互
 
 2. 微内核架构
 
-所有主数据集中在一块, 具体的业务系统以插件模块存在,
+    所有主数据集中在一块, 具体的业务系统以插件模块存在,
 
-插件是相互透明的, 插件只会访问内核中的公共资源?
+    插件是相互透明的, 插件只会访问内核中的公共资源?
 
-子系统不能互相通信
+    子系统不能互相通信
 
 3. 事件驱动架构
 
-从管道发送和接收消息, 每个消息的处理者都是高度解耦的
+    从管道发送和接收消息, 每个消息的处理者都是高度解耦的
 
-SOA架构时代的探索..
+    SOA架构时代的探索..
 
-出现了服务的松耦合 注册 发现 治理 编排等
+    出现了服务的松耦合 注册 发现 治理 编排等
 
-Open CSA组织
+    Open CSA组织
 
-服务的松耦合 注册 发现 治理 隔离 编排等
+    服务的松耦合 注册 发现 治理 隔离 编排等
 
-具体的探索:
+    具体的探索:
 
-更具体: soa是抽象概念, 但是更有可操作性
+    更具体: soa是抽象概念, 但是更有可操作性
 
-基础平台: soa有技术组织open csa
+    基础平台: soa有技术组织open csa
 
-设计指导原则 封装性 自治 松耦合 可重用 可组合 无状态
+    设计指导原则 封装性 自治 松耦合 可重用 可组合 无状态
 
-在体系化, 精密写作的技术组件支持下, soa解决了服务注册发现, 隔离治理的技术问题
+    在体系化, 精密写作的技术组件支持下, soa解决了服务注册发现, 隔离治理的技术问题
 
-soa的精密流程和理论, 过于艰难难懂, 难以成为广泛普适性的软件架构风格.
+    soa的精密流程和理论, 过于艰难难懂, 难以成为广泛普适性的软件架构风格.
 
-构建在webService基础之上的ESB BPM SCA SDO的诸多上层建筑, 进一步加剧了复杂性
+    构建在webService基础之上的ESB BPM SCA SDO的诸多上层建筑, 进一步加剧了复杂性
 
-ejb当年作为企业级javabean 仍然被spring hibernate打败了
+    ejb当年作为企业级javabean 仍然被spring hibernate打败了
 
-分布式时代距离透明越来越远了.
+    分布式时代距离透明越来越远了.
 
 ### 微服务时代 soa的革命者
 
@@ -723,50 +723,48 @@ ejb当年作为企业级javabean 仍然被spring hibernate打败了
 
 1. 围绕业务能力构建
 
-有怎样的规模和能力的团队 就会产生怎样的产品
+    有怎样的规模和能力的团队 就会产生怎样的产品
 
-当团队和产品稳定后 就会有一致的结构
+    当团队和产品稳定后 就会有一致的结构
 
 2. 分散治理
 
-微服务对应的开发团队, 有直接对服务运行质量负责的责任
+    微服务对应的开发团队, 有直接对服务运行质量负责的责任
 
 3. 通过服务来实现独立自治的组件
 
-服务是进程化的组件, 远程服务调用成本高昂, 但是是为组件带来隔离与自治能力的代价
+    服务是进程化的组件, 远程服务调用成本高昂, 但是是为组件带来隔离与自治能力的代价
 
 4. 产品化思维
 
-软件研发不是完成某种功能, 而是作为一个持续改进, 提升的过程
+    软件研发不是完成某种功能, 而是作为一个持续改进, 提升的过程
 
 5. 数据去中心化
 
-数据应该按领域来分散管理, 更新, 维护和存储.
+    数据应该按领域来分散管理, 更新, 维护和存储.
 
 6. 轻量级通讯机制
 
-弱管道机制, 很多服务只是强加进来的负担
+    弱管道机制, 很多服务只是强加进来的负担
 
-restful风格通讯是比较适合的
+    restful风格通讯是比较适合的
 
 7. 容错性设计
 
-可以通过快速的故障检测, 进行及时的隔离和联通
+    可以通过快速的故障检测, 进行及时的隔离和联通
 
-可靠的系统可以由出错的服务来组成
+    可靠的系统可以由出错的服务来组成
 
 8. 演进式设计
 
-一个良好设计的服务, 是可以被报废的
+    一个良好设计的服务, 是可以被报废的
 
 9. 基础设施自动化
 
-CI/CD的发展, 降低构建, 发布, 运维工作的复杂度.
-
+    CI/CD的发展, 降低构建, 发布, 运维工作的复杂度.
 
 > This common manifestation of SOA has led some microservice advocates to reject the SOA label entirely, although others consider microservices to be one form of SOA , perhaps service orientation done right. Either way, the fact that SOA means such different things means it’s valuable to have a term that more crisply defines this architectural style.
 > 由于与 SOA 具有一致的表现形式，这让微服务的支持者更加迫切地拒绝再被打上 SOA 的标签。一些人坚持认为微服务就是 SOA 的一种变体，尽管仅从面向服务这个角度来考虑，这个观点可以说也是正确的。但无论如何，从整体上看 SOA 与微服务都是两种不同的东西。也因此，使用一个别的名称，来简明地定义这种架构风格就显得非常有必要了。—— Martin Fowler / James Lewis，Microservices
-
 
 服务通讯, 进入候选清单的就很多了..
 
@@ -782,7 +780,7 @@ springcloud的工具集, 通过统一接口, 屏蔽了复杂度
 
 我的产品适合微服务架构吗?
 
-### 后微服务时代
+### 后微服务时代_上
 
 微服务时代都没法完全避免服务注册 跟踪 负载 传输的问题
 
@@ -812,33 +810,32 @@ kubernetes的基础设施层面解决方案
 
 ![Alt text](image.png)
 
-
 云原生时代 与业务无关的技术问题, 在硬件基础设施内被解决掉..
 
 k8s 并没有完美解决全部的分布式问题
 
-因为一些问题处于应用系统与基础设施的边缘, 
+因为一些问题处于应用系统与基础设施的边缘,
 
 我们很难精细化的解决掉他们
 
 例如 服务A 调用了 服务B 的两个服务 B1 B2
 
-其中B2 出现连续报错, 
+其中B2 出现连续报错,
 
 如果对A-B进行熔断, 则
 
 # 2024年1月13日
 
 autocad弹出lincense解决办法:
-https://www.moxingzu.com/a/2020-02-05/113598.html
+<https://www.moxingzu.com/a/2020-02-05/113598.html>
 
 已重命名为 AcWebBrowser.bak.exe
 
 ## git详解
 
-https://www.liaoxuefeng.com/wiki/896043488029600
+<https://www.liaoxuefeng.com/wiki/896043488029600>
 
-### 后微服务时代
+### 后微服务时代_下
 
 基础设施的力度比较粗犷
 
@@ -868,9 +865,9 @@ smart endpoints
 
 微服务只需要考虑业务本身逻辑..
 
-## 周志明的软件架构课
+## 周志明的软件架构课_2
 
-https://time.geekbang.org/column/article/337708
+<https://time.geekbang.org/column/article/337708>
 
 ### 无服务架构
 
@@ -904,7 +901,7 @@ iron.in提出无服务概念
 
 无服务是短连接, 无状态, 适合事件驱动的交互形式..
 
-无服务的无限算力决定其按使用量付费, 
+无服务的无限算力决定其按使用量付费,
 
 函数响应时间不会太好..
 
@@ -976,8 +973,7 @@ java字段校验: 使用Java Bean Validation
 
 @Null、@NotNull、@AssertTrue、@AssertFalse、@Min、@Max、@DecimalMin、@DecimalMax、@Negative、@NegativeOrZero、@Positive、@PositiveOrZeor、@Szie、@Digits、@Pass、@PassOrPresent、@Future、@FutureOrPresent、@Pattern、@NotEmpty、@NotBlank、@Email
 
-https://time.geekbang.org/column/article/336798
-
+<https://time.geekbang.org/column/article/336798>
 
 ## 分布式基石
 
@@ -997,21 +993,20 @@ Paxos算法
 
 切换到目录
 
-```
-# bash 脚本
+```bash
 cd C:\Users\23629\scoop\apps\graalvm22-jdk17\22.3.2\lib\installer\bin
  .\gu.exe list
 ```
 
 找native image工具包:
 
-https://github.com/graalvm/graalvm-ce-builds/releases?q=22.3.2&expanded=true
+<https://github.com/graalvm/graalvm-ce-builds/releases?q=22.3.2&expanded=true>
 
 在release界面搜索native-image-installable-svm-java17-windows-amd64
 
-https://www.cnblogs.com/qiyebao/p/14351599.html
+<https://www.cnblogs.com/qiyebao/p/14351599.html>
 
-https://blog.csdn.net/wangpaiblog/article/details/122422987
+<https://blog.csdn.net/wangpaiblog/article/details/122422987>
 
 native-image -jar JAR 包的路径 打包命令
 
@@ -1021,34 +1016,31 @@ native-image -jar JAR 包的路径 打包命令
 
 继续周志明架构课
 
-## 周志明的软件架构课
+## 周志明的软件架构课_3
 
-https://time.geekbang.org/column/article/337708
+<https://time.geekbang.org/column/article/337708>
 
 课程答题记录 爬虫
 
-```
+```js
 let a = []
 document.querySelectorAll('.paper-item-cotainer').forEach(res => {a.push(res.innerText)})
-
+/*
 只回复"正确", 或者"错误"
-
-[^\n]*\n[^\n]*\n[^\n]*\n[^\n]*\n[^\n]*\n
-```
-
 ([^\n]*\n[^\n]*\n[^\n]*\n[^\n]*\n[^\n]*\n)
-
 \n\n\n\n\n只回复正确选项, 不需要任何解释, 我接下来的五个问题是: \n $1
+*/
+```
 
 # 2024年1月15日
 
 国考成绩已出
 
-行测60.1 申论46 专业课62 综合成绩56.44进入面试, 排名未知. 
+行测60.1 申论46 专业课62 综合成绩56.44进入面试, 排名未知.
 
 ## 公务员 结构化面试学习
 
-https://www.bilibili.com/video/BV1hZ4y1d78A
+<https://www.bilibili.com/video/BV1hZ4y1d78A>
 
 ### 四条共性
 
@@ -1060,7 +1052,7 @@ https://www.bilibili.com/video/BV1hZ4y1d78A
 
 列出1234点, 思路清晰
 
-结构合理, 精心设计答题结构 对不同的问法进行调整, 
+结构合理, 精心设计答题结构 对不同的问法进行调整,
 
 审题
 
@@ -1108,7 +1100,7 @@ https://www.bilibili.com/video/BV1hZ4y1d78A
 
 * 平衡目的和方法
 
-目的是一个 方法是灵活多变的 不要一根筋, 
+目的是一个 方法是灵活多变的 不要一根筋,
 
 * 平衡好执法质量和执法效率
 
@@ -1120,7 +1112,7 @@ https://www.bilibili.com/video/BV1hZ4y1d78A
 
 * 平衡好治标和治本
 
-不敢腐 对法律有敬畏感 
+不敢腐 对法律有敬畏感
 
 不能腐 规则纪律
 
@@ -1138,10 +1130,37 @@ https://www.bilibili.com/video/BV1hZ4y1d78A
 
 法律讲究社会效果, 政治效果, 讲究人心
 
+* 平衡法律问题和社会问题
 
+处理法律问题, 考虑社会问题
 
+不能仅仅考虑法律, 还要考虑社会问题,
 
+### 执法特点
 
+* 公平
 
+没有不公平的现象
 
+* 公开
+
+对公众公开
+
+* 公正
+
+天平一定要公正
+
+* 正义
+
+最朴素的价值观
+
+* 规范
+
+严格依据相关程序, 对各种行业规范
+
+* 程序
+
+坚决汇报, 执行到位, 可以暂时省略繁琐的程序
+
+* 原则
 
