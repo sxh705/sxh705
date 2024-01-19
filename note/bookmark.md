@@ -153,3 +153,12 @@ java架构师笔记 布隆过滤器
 ## 杂物
 
 vsc 调整字体大小 <https://blog.csdn.net/u014139753/article/details/111885028>
+
+
+## 可信前端之路
+
+pow验证 http://liyangready.github.io/2016/08/21/%E5%8F%AF%E4%BF%A1%E5%89%8D%E7%AB%AF%E4%B9%8B%E8%B7%AF-pow%E9%AA%8C%E8%AF%81/
+
+阮一峰博客
+
+https://www.ruanyifeng.com/blog/archives.html
