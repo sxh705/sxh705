@@ -162,3 +162,12 @@ pow验证 http://liyangready.github.io/2016/08/21/%E5%8F%AF%E4%BF%A1%E5%89%8D%E7
 阮一峰博客
 
 https://www.ruanyifeng.com/blog/archives.html
+
+2024年1月21日
+
+为什么领导很少提拔老实人，反而那种一看油嘴滑舌的人升的更快？ - 团长带带我的回答 - 知乎
+https://www.zhihu.com/question/621493200/answer/3368481816
+
+为什么领导很少提拔老实人，反而那种一看油嘴滑舌的人升的更快？ - 小胖的回答 - 知乎
+https://www.zhihu.com/question/621493200/answer/3336523308
+
