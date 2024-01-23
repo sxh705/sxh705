@@ -168,6 +168,19 @@ https://www.ruanyifeng.com/blog/archives.html
 为什么领导很少提拔老实人，反而那种一看油嘴滑舌的人升的更快？ - 团长带带我的回答 - 知乎
 https://www.zhihu.com/question/621493200/answer/3368481816
 
-为什么领导很少提拔老实人，反而那种一看油嘴滑舌的人升的更快？ - 小胖的回答 - 知乎
-https://www.zhihu.com/question/621493200/answer/3336523308
+# 2024年1月22日
+
+典型p2p技术
+
+https://keenjin.github.io/2021/04/p2p/
+
+taro 代替 uni-app
+
+https://docs.taro.zone/docs/GETTING-STARTED
+
+Obsidian 跨越研究生生涯的 4 年年度回顾 - Benature的文章 - 知乎
+https://zhuanlan.zhihu.com/p/678256692
+
+如何才能找到自己如鱼得水的领域和天赋？ - 张君的回答 - 知乎
+https://www.zhihu.com/question/631695076/answer/3366653571
 
