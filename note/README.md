@@ -2023,44 +2023,45 @@ https://xgr313l2jy.k.topthink.com/@xhrm/up.html
 对应关系表: yml
 
 ```yml
+
 键位与字母的对应关系
-1-5
+
+"1-5"
   a: a
   b: in
   c: ao
   d: ai
   e: e
 
-6-10
+"6-10"
   f: en
   g: eng
   h: ang
   i: i
   g: eng
 
-11-15
+"11-15"
   k: [uai, ing]
   l: [uang, iang]
   m: ian
   n: iao
   o: iu
 
-16-20
+"16-20"
   p: ie
   q: iu
   r: uan
   s: [iong, ong]
   t: [ue, ve]
 
-21-25
+"21-25"
   u: u
   v: [zh, ui]
   w: ei
   x: [ui, ia]
   y: un
 
-26
+"26"
   z: ou
-
 ```
  
