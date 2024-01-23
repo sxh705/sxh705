@@ -257,4 +257,19 @@ https://zhuanlan.zhihu.com/p/127073515
 第三个肯定是: 以后我们面对的不仅是人与人的竞争, 也有人与机器的竞争, 每个人都应该努力提升自己, 打造与机器具有差异性的核心竞争力, 比如创新, 协调, 沟通, 分析, 总结, 共情等方面的能力. 
 
 以上是我对第一题的看法, 回答完毕. 
+# 2024年1月22日
+
+典型p2p技术
+
+https://keenjin.github.io/2021/04/p2p/
+
+taro 代替 uni-app
+
+https://docs.taro.zone/docs/GETTING-STARTED
+
+Obsidian 跨越研究生生涯的 4 年年度回顾 - Benature的文章 - 知乎
+https://zhuanlan.zhihu.com/p/678256692
+
+如何才能找到自己如鱼得水的领域和天赋？ - 张君的回答 - 知乎
+https://www.zhihu.com/question/631695076/answer/3366653571
 
