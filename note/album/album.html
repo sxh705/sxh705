@@ -1,0 +1,46 @@
+<div id="_album_fcnsj">
+    <div>
+        <!-- 页码 -->
+        <button v-for="v, k in a_list" @click="a_selected = k" style="
+                margin-right: 10px;
+                margin-bottom: 10px;
+                min-width: 30px;
+                min-height: 30px;
+            ">
+            {{ k + 1 }}
+        </button>
+    </div>
+    
+    <div style="
+                margin: 10px;
+            ">
+        <!-- 图片 -->
+        <img 
+            :src="a_list[a_selected]" 
+            width="90%"
+            style="
+                border-style: solid;
+                padding: 10px;
+                border-radius: 10px;
+                border-width: 1px;
+            "
+        />
+    </div>
+</div>
+
+<script>
+    Vue.createApp({
+        mounted() {
+            for (let i = 0;i < 1;i++) {
+                this.a_list.push("note/image.png")
+            }
+        },
+        data: () => ({
+            a_list: [
+                "note/image-1.png",
+                "note/image-2.png",
+            ],
+            a_selected: 0,
+        })
+    }).mount("#_album_fcnsj")
+</script>

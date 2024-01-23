@@ -2017,51 +2017,44 @@ https://zhuanlan.zhihu.com/p/127073515
 
  # 脑子有点晕 , 保存页数, 玩点别的吧, 做饭 跑步, 小鹤
 
-小鹤双排
+小鹤双拼
 https://xgr313l2jy.k.topthink.com/@xhrm/up.html
+
+![Alt text](image-2.png)
 
 对应关系表: yml
 
+
 ```yml
-
-键位与字母的对应关系
-
-"1-5"
-  a: a
-  b: in
-  c: ao
-  d: ai
-  e: e
-
-"6-10"
-  f: en
-  g: eng
-  h: ang
-  i: i
-  g: eng
-
-"11-15"
-  k: [uai, ing]
-  l: [uang, iang]
-  m: ian
-  n: iao
-  o: iu
-
-"16-20"
-  p: ie
-  q: iu
-  r: uan
-  s: [iong, ong]
-  t: [ue, ve]
-
-"21-25"
-  u: u
-  v: [zh, ui]
-  w: ei
-  x: [ui, ia]
-  y: un
-
-"26"
-  z: ou
+1
+    a: a
+    b: in
+    c: ao
+    d: ai
+    e: e
+2
+    f: en
+    g: eng
+    h: ang
+    i: i
+    j: an
+3
+    k: [uai, ing]
+    l: [uang, iang]
+    m: ian
+    n: iao
+    o: iu
+4
+    p: ie
+    q: iu
+    r: uan
+    s: [iong, ong]
+    t: [ue, ve]
+5
+    u: u
+    v: [zh, ui]
+    w: ei
+    x: [ia, ua]
+    y: un
+    z: ou
 ```
- 

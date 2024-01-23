@@ -16,33 +16,3 @@
         navigator.serviceWorker.register('src/sw.js')
     }
 })()
-
-let _404 = () => {
-    Vue.createApp({
-        data() {
-            return {sec: 1000}
-        },
-        mounted() {
-            let url = window.location.href;
-            if (url.endsWith("/#/note")) {
-                window.location.href = url + "/";
-                return;
-            }
-            let step = 1000;
-            let f = () => {
-                setTimeout(() => {
-                    if (this.sec > 0) {
-                        this.sec -= step;
-                        f();
-                    } else {
-                        if (url !== window.location.href) {
-                            return;
-                        }
-                        window.location.href = window.location.origin
-                    }
-                }, step);
-            }
-            f();
-        }
-    }).mount("#_404_sjhc")
-}
