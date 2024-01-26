@@ -16,7 +16,7 @@
             ">
         <!-- 图片 -->
         <img 
-            :src="a_list[a_selected]" 
+            :src="'note/album/' + a_list[a_selected]" 
             width="90%"
             style="
                 border-style: solid;
@@ -25,6 +25,7 @@
                 border-width: 1px;
             "
         />
+        
     </div>
 </div>
 
@@ -34,10 +35,8 @@
         },
         data: () => ({
             a_list: [
-                "note/image-2.png",
-                "note/image-1.png",
-                "note/image.png",
-                "note/album/17060163568728367347227319185520.jpg",
+                "17060163568728367347227319185520_11zon.jpg",
+                "WIN_20240126_07_53_13_Pro.jpg",
 
             ],
             a_selected: 0,

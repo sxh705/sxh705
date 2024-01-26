@@ -2022,39 +2022,59 @@ https://xgr313l2jy.k.topthink.com/@xhrm/up.html
 
 ![Alt text](image-2.png)
 
-对应关系表: yml
+在线JSON转Toml-Toml转JSON
+https://www.bejson.com/json/json2toml/
 
+对应关系表:
 
-```yml
-1
-    a: a
-    b: in
-    c: ao
-    d: ai
-    e: e
-2
-    f: en
-    g: eng
-    h: ang
-    i: i
-    j: an
-3
-    k: [uai, ing]
-    l: [uang, iang]
-    m: ian
-    n: iao
-    o: iu
-4
-    p: ie
-    q: iu
-    r: uan
-    s: [iong, ong]
-    t: [ue, ve]
-5
-    u: u
-    v: [zh, ui]
-    w: ei
-    x: [ia, ua]
-    y: un
-    z: ou
+```toml
+[[a]]
+a = []
+b = "in"
+c = "ao"
+d = "ai"
+e = []
+[[a]]
+f = "en"
+g = "eng"
+h = "ang"
+i = "ch"
+j = "an"
+[[a]]
+k = ["ing", "uai"]
+l = ["iang", "uang"]
+m = "ian"
+n = "iao"
+o = "uo"
+[[a]]
+p = "ie"
+q = "iu"
+r = "uan"
+s = ["iong", "ong"]
+t = ["ue", "ve"]
+[[a]]
+u = "sh"
+v = ["zh", "ui"]
+w = "ei"
+x = ["ia", "ua"]
+y = "un"
+z = "ou"
 ```
+
+# 2024年1月26日
+
+今日计划
+
+1. 听面试课 2小时
+
+2. 录视频 5个 每个2遍
+
+3. 上午跑步 中午体育场跑步 洗澡
+
+4. 背 小鹤 码表 抄写5遍
+
+5. 每日照片一次(已完成)
+
+vite-tamper-monkey
+
+https://github.com/lisonge/vite-plugin-monkey/tree/main

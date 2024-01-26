@@ -108,3 +108,83 @@ p = "ie"
 q = "iu"
 
 ```
+
+2024年1月26日 - 1
+```toml
+[[a]]
+a = []
+b = "in"
+c = "ao"
+d = "ai"
+e = []
+[[a]]
+f = "en"
+g = "eng"
+h = "ang"
+i = "ch"
+j = "an"
+[[a]]
+k = ["ing", "uai"]
+l = ["iang", "uang"]
+m = "ian"
+n = "iao"
+o = "uo"
+[[a]]
+p = "ie"
+q = "iu"
+r = "uan"
+s = ["iong", "ong"]
+t = ["ue", "ve"]
+[[a]]
+u = ["sh"]
+v = ["zh", "ui"]
+w = "ei"
+x = ["ia", "ua"]
+y = "un"
+z = "ou"
+```
+
+2024年1月26日-2
+```toml
+a = [
+{ a = [], b = "in", c = "ao", d = "ai", e = [] },
+{ k = ["ing", "iao"],  l = ["iang", "uang"], m = "ian", n = "iao", o = "uo"},
+{ p = "ie", q = "iu", r = 'uan', s = ['iong', 'ong'], t = ["ue", "ve"] },
+{ u = 'sh', v = ["zh", "ui"], w = "ei", x = ['ia', 'ua'], y = "un", z = "ou" }
+]
+```
+
+2024年1月26日-3
+
+```yml
+a: []
+b: in
+c: ao
+d: ai
+e: []
+
+f: en
+g: eng
+h: ang
+i: ch
+j: an
+
+k: ing, uai
+l: iang, uang
+m: ian
+n: iao
+o: uo
+
+p: ie
+q: iu
+r: uan
+s: iong, ong
+t: ue, ve
+
+u: sh
+v: zh, ui
+w: ei
+x: ia, ua
+y: un
+z: ou
+```
