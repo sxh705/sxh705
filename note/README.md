@@ -2172,7 +2172,40 @@ https://github.com/lisonge/vite-plugin-monkey/tree/main
 
 要“眼里揉不得沙子”遇见错误言行，态度鲜明，敢于发声，当好意识形态的捍卫者，绝对不能装聋作哑，视而不见。
 
+小鹤输入法 yml
 
+```yml
+a: ~
+b: in
+c: ao
+d: ai
+e: ~
+
+f: en
+g: eng
+h: ang
+j: an
+i: ch
+
+k: ing uai
+l: iang uang
+m: ian
+n: iao
+o: uo
+
+p: ie
+q: iu
+r: uan
+s: iong ong
+t: ue ve
+
+u: sh
+v: zh ui
+w: ei
+x: ia ua
+y: un
+z: ou
+```
 
 
 
