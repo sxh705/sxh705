@@ -188,3 +188,422 @@ x: ia, ua
 y: un
 z: ou
 ```
+
+```yml
+a: []
+b: in
+c: ao
+d: ai
+e: []
+
+f: en
+g: eng
+h: ang
+i: ch
+j: an
+
+k: ing uai
+l: iang uang
+m: ian
+n: iao
+o: uo
+
+p: ie
+q: iu
+r: uan
+s: iong ong
+t: ue ve
+
+u: sh
+v: zh ui
+w: ei
+x: ia ua
+y: un
+z: ou
+
+```
+
+```yml
+a: []
+b: in
+c: ao
+d: ai
+e: []
+f: en
+g: eng
+h: ang
+i: ch
+j: an
+k: ing uai
+l: iang uang
+m: ian
+n: iao
+o: uo 
+p: ie
+q: iu
+r: uan
+s: iong ong
+t: ue ve
+u: sh
+v: zh ui
+w: ei
+x: ia ua
+y: un
+z: ou
+```
+
+```yml
+a: []
+b: in
+c: ao
+d: ai
+e: []
+
+f: en
+g: eng
+h: ang
+i: ch
+j: an
+
+k: ing uai
+l: iang uang
+m: ian
+n: iao
+o: uo
+
+p: ie
+q: iu
+r: uan
+s: iong ong
+t: ue ve
+
+u: sh
+v: zh ui
+w: ei
+x: ia ua
+y: un
+z: ou
+```
+
+```golang
+x := map[string]string {
+    "a": [],
+    "b": "in",
+    "c": "ao",
+    "d": "ai",
+}
+```
+
+```java
+var x = Map.of(
+    "a", []
+    "b", "in",
+    "c", "ao"
+)
+```
+
+```python
+x = {
+    'a': [],
+    'b': "in",
+}
+```
+
+```javascript
+let x = {
+    a: [],
+    b: `in`,
+    c: `ao`,
+    d: `ai`,
+    e: [],
+
+    f: `en`,
+    g: `eng`,
+    h: `ang`,
+    i: `ch`,
+    j: `an`,
+
+    k: `ing, uai`,
+    l: `iang uang`,
+    m: `ian`,
+    n: `iao`
+}
+```
+
+```yml
+a: []
+b: in
+c: ao
+d: ai
+e: []
+
+f: en
+g: eng
+h: ang
+i: ch
+j: an
+
+k: ing uai
+l: iang uang
+m: ian
+n: iao
+o: uo
+
+p: ie
+q: iu
+r: uan
+s: iong ong
+t: ue ve
+
+u: sh
+v: zh ui
+w: ei
+x: ia ua
+y: un
+z: ou
+```
+
+```yml
+a: ~
+b: in
+c: ao
+d: ai
+e: ~
+
+f: en
+g: eng
+h: ang
+i: ch
+j: an
+
+k: ing uai
+l: iang uang
+m: ian
+n: iao
+o: uo
+
+p: ie
+q: iu
+
+r: uan
+s: iong ong
+t: ue ve
+
+u: sh
+v: zh ui
+w: ei
+
+x: ia ua
+y: un
+z: ou
+
+```
+
+```yml
+a: ~
+b: in
+c: ao
+
+d: ai
+e: ~
+f: en
+g: eng
+
+h: ang
+i: ch
+j: an
+k: ing uai
+
+l: iang uang
+m: ian
+n: iao
+
+o: uo
+p: ie
+q: iu
+
+r: uan
+s: iong ong
+t: ue ve
+
+u: sh
+v: zh ui
+w: ei
+
+x: ia ua
+y: un
+z: ou
+
+```
+
+
+```yml
+a: ~
+b: in
+c: ao
+d: ai
+e: ~
+
+a: ~
+b: in
+c: ao
+d: ai
+e: ~
+
+a: ~
+b: in
+c: ao
+d: ai
+e: ~
+
+a: ~
+b: in
+c: ao
+d: ai
+e: ~
+
+a: ~
+e: ~
+b: in
+c: ao
+d: ai
+
+a: ~
+b: in
+c: ao
+d: ai
+e: ~
+
+a: ~
+b: in
+c: ao
+d: ai
+
+b: in
+c: ao
+d: ai
+
+b in
+c ao
+d ai
+
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+b in c ao d ai
+```
+
+
+```yml
+f: en
+g: eng
+h: ang
+j: an
+i: ch
+i: ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch 
+i ch
+i ch
+i ch
+i ch
+i ch 
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch 
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+i ch
+
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an 
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+f en g eng h ang j an
+```
+
+```yml
+p: ie
+q: iu
+r: uan
+s: iong ong
+t: ue ve
+
+
+```
