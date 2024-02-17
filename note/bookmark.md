@@ -189,3 +189,10 @@ https://www.zhihu.com/question/631695076/answer/3366653571
 老夏 祛魅 抓手
 https://www.bilibili.com/video/BV1bK411v7bH/?spm_id_from=333.1007.tianma.3-1-5.click&vd_source=6fee5888cff5ab9e8fd8044b2f953fa7
 
+# 2024年2月17日
+
+面向对象编程
+
+软件开发人员的天赋到底指什么？ - 大大大大大芳的回答 - 知乎
+https://www.zhihu.com/question/644373020/answer/3398111597
+
