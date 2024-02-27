@@ -196,3 +196,8 @@ https://www.bilibili.com/video/BV1bK411v7bH/?spm_id_from=333.1007.tianma.3-1-5.c
 软件开发人员的天赋到底指什么？ - 大大大大大芳的回答 - 知乎
 https://www.zhihu.com/question/644373020/answer/3398111597
 
+
+
+vite-tamper-monkey
+
+https://github.com/lisonge/vite-plugin-monkey/tree/main
