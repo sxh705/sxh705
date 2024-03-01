@@ -3249,3 +3249,196 @@ PaperTime 知网查重, 最好是word格式而不是pdf
 
 > （4）每个优秀的人，都有一段沉默的时光。那段时光，是付出了很多努力，却得不到结果的日子，我们把它叫作扎根。任何人的成功都不是偶然的，都是平日里含泪忍耐和咬牙坚持换来的必然结果。好日子都是从苦日子里熬出来的，如果你看不到好日子，说明熬得还不够，坚持住了，成功就在前面等你！阳光总在风雨后，我们要做的就是努力前行。
 
+答题5方向: 如何努力做一件事 **P46**
+
+1. 有啥说啥 自然而然的观点
+
+2. 拿出态度 调整心态
+
+3. 聚焦重点 事情的关键是什么?
+
+4. 应对突变 面对困难, 问题, 挫折的态度和方法
+
+5. 做好日常工作 踏踏实实做好每一天的工作
+
+
+8.00 出发做864 爷爷带我去? 改成10点
+
+https://grammar.english.vg/
+
+旋元佑进阶英语语法文法
+
+错误处理: listen EACCES: permission denied ::1:5173
+
+输入指令即可:
+
+```shell
+net stop winnat
+net start winnat
+```
+
+学习:
+
+typescript:
+进行类型约束
+typescriptlang.org
+
+```typescript
+let str = 'abc'
+str = 10
+```
+
+
+类型注解as
+```typescript
+let str: string
+let numArr = [1, 2, 3]
+const result = numArr.find(item => item > 2) as number
+result *= 2
+
+
+let v4: string | null = null
+let v5: 1 | 2 | 3 = 2
+let arr: number[] = [1, 2, 3, 'a'] // 错误
+let arr1: Array<String> = [1, 2, 3]
+let t1: [number, string, number?] = [1, 'a'] // 元组, 问号可选
+enum MyEnum {
+     A,
+     B,
+     C
+}
+
+console.log(MyEnum.A) // 枚举 0
+MyEnum[0] // A
+Void // undefined
+function MyFn (a: number, b?: string): void {
+     return a + b; // 错误 不是void
+}
+
+// interface // 接口 定义对象
+
+interface Obj {
+     name: string,
+     age: number
+}
+
+const obj: Obj = {
+     name: 'a',
+     age: 10,
+}
+
+const obj2: Obj = {
+
+}
+
+// type 别名
+
+type MyUserName: string | number
+
+function myFn<T>(a: T, b: T): T[] {
+     return [a, b]
+}
+
+// d.ts 使用declare声明变量类型
+// 全局变量 全局函数 全局类型 全局声明
+declare var wx: any;
+// wx.d.ts 或者在ts中生命
+// declare module "*.css": 声明模块
+// 
+
+
+```
+Vue教程
+可以用setup方法或者script setup标签
+
+reactive: 响应式数据结构
+可以处理多维数据 完全响应式
+
+shalloReactive: 单层响应式结构, 防止数据过度复杂
+
+函数: 直接写函数
+
+自动引入, volar
+
+computed 计算属性
+
+ref: 基本数据类型 一个数字
+
+count.value
+
+es6 proxy
+
+readonly(xxx) 非响应式数据
+
+vue tool: 可以更改数据
+
+shallowReadonly: 浅层readonly, 刷新控制器会更新
+
+computed 计算属性内部放一个callback
+
+
+watch: 监听器 
+watch(ref对象, callback(old, new)=>{}) 
+侦听处理
+
+只能监听函数, ref, reactive.
+
+所以监听属性需要函数 例如 () => data.age
+
+watchEffect(() => {
+     console.log(count.v, muData.age)
+})
+副作用函数 内部callback中的每个变量的修改都会触发
+
+react教程
+
+基于react项目
+
+脚手架
+
+`npx create-react-app`
+
+npm start
+
+根组件app.js
+
+函数式组件(主推) 类组件
+
+jsx语法
+
+大一下学期应该干什么? - 如日方升的回答 - 知乎
+https://www.zhihu.com/question/447177295/answer/3410778935
+
+
+"最小收益惯性"
+
+
+按照以下格式a, 总结内容b 中的书籍:
+
+格式a: 
+
+```
+[1]	何颖. 基于Nessus的网络安全检测[D]. 吉林大学, 2006
+[2]	张静媛,黄丹丹等. NESSUS基本原理及其关键技术分析[J] . 电子科技, 2006,(11) 
+[3]	肖晖,张玉清. Nessus插件开发及实例[J]. 计算机工程, 2007,(02)
+```
+
+内容b:
+```
+[书籍] Spring Boot+Vue开发实战
+ 8.2 (52人评价) 朱建昕 / 电子工业出版社 / 2021
+
+[书籍] Java EE企业级应用开发实战（Spring Boot+Vue+Element）
+ 9.1 (32人评价) 李磊 / 人民邮电出版社 / 2023
+
+[书籍] 深入理解Java虚拟机（第3版） 可试读 有电子版
+ 9.4 (818人评价) 周志明 / 机械工业出版社 / 2019
+
+ [书籍] 深入浅出MySQL
+ 7.5 (135人评价) 唐汉明 / 人民邮电出版社 / 2014
+ 
+[书籍] Redis使用手册 可试读 有电子版
+ 7.6 (60人评价) 黄健宏 / 机械工业出版社 / 2019
+ ```
+
+ 
