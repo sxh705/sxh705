@@ -3765,11 +3765,203 @@ Q思考 行路
 
 Q当务之急 目前的情绪
 
-Q
+Q做更简单的事情 持续前进即可 不管这前进多小。
+
+# 2024年3月10日10:44:04
+
+当前，面对百年未有之大变局，国际上以美国为首的西方国家在科技、贸易、文化、意识形态领域，对我们进行封堵、围攻；国内产业升级、经济发展、改善民生的压力也不小。中华民族伟大复兴在望，我们每前进一步，都要面对更加巨大的压力和挑战。越是这个时候，我们越需要坚持艰苦奋斗、勤俭节约，只有这样才能战胜种种挑战。
+
+我一直认为，政策想要获得群众的支持，就必须尊重人性，尊重群众的所思所想
 
 
+## java bbs
 
+博客论坛系统 来自bilibili
 
+2024年3月10日11:22:29
+
+【【从0带做】博客论坛系统，基于SpringBoot+Vue的个人博客系统，多人博客系统，论坛管理系统，适合做实习项目、毕业设计】https://www.bilibili.com/video/BV1ou4y1c7HF
+
+项目源码组织方式：
+
+dayx:
+
+    bbs_frontend_vue
+
+    bbs_backend_java
+
+        io.sxh705.bbs
+
+    
+
+sql采用mysql5.7 命名方式：
+
+    地址：jdbc:mysql://localhost:3306/db_bbs_backend
+
+    库：db_bbs_backend
+
+    表：tb_user userName password
+
+```yml
+# 配置模板
+# application-dev.yml
+
+server:
+  port: 8080
+  shutdown: graceful #开启优雅停机，默认immediate是立即关机
+  tomcat.threads.max: ${TOMCAT_THREAD_NUM:800}
+
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 30s #设置优雅停机缓冲期，最大等待时间
+  threads:
+    virtual:
+      enabled: true  #启动虚拟线程的必须配置
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+
+mybatis-plus:
+  global-config:
+    banner: false
+  configuration:
+    map-underscore-to-camel-case: false
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: false
+
+sa-token:
+  is-print: false
+```
+
+```yml
+# 配置模板
+# application-dev.yml
+spring:
+  datasource:
+    username: root
+    password: PIom0163
+    url: jdbc:mysql://localhost:3306/test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: PIom0163
+
+logging:
+  level:
+    root: error
+    io.github.sxh705: info
+```
+
+```xml
+<!-- pom.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.1</version>
+        <relativePath/>
+    </parent>
+    <groupId>io.github.sxh705.bbs</groupId>
+    <artifactId>backend_bbs</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>backend_bbs</name>
+    <description>simple backend bbs</description>
+    <properties>
+        <java.version>22</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter-test</artifactId>
+            <version>3.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-spring-boot3-starter -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+            <version>3.5.5</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-spring-boot3-starter</artifactId>
+            <version>1.37.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.24</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!-- Sa-Token 整合 Redis （使用 jackson 序列化方式） -->
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-redis-jackson</artifactId>
+            <version>1.37.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <compilerArgs>--enable-preview</compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
 
 
 
