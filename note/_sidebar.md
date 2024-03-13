@@ -15,3 +15,4 @@
 * [100题_其他类型](/note/100questions_其他类型.md)
 
 <!-- * [album](/note/album/album.html) -->
+
