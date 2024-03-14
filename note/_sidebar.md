@@ -4,6 +4,8 @@
 
 * [bookmark](/note/bookmark.md)
 
+* [200题_示例](/note/千练成面示范及200道经典题目.md)
+
 * [100题_综合分析](/note/100questions_综合分析.md)
 
 * [100题_组织管理](/note/100questions_组织管理.md)
@@ -15,7 +17,5 @@
 * [100题_其他类型](/note/100questions_其他类型.md)
 
 <!-- * [album](/note/album/album.html) -->
-
-* [200题_示例](/note/千练成面示范及200道经典题目.md)
 
 
