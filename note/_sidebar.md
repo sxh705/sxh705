@@ -4,6 +4,8 @@
 
 * [bookmark](/note/bookmark.md)
 
+* [老夏](/note/老夏说公务员面试：100真题摆平面试_Format.md)
+
 * [200题_示例](/note/千练成面示范及200道经典题目.md)
 
 * [100题_综合分析](/note/100questions_综合分析.md)
