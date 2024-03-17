@@ -71,7 +71,8 @@ if (typeof navigator.serviceWorker !== 'undefined') {
         }
         window.addEventListener('scroll', debounce(() => {
             const k = getK();
-            const v = document.querySelector('li.active>a').href;
+            const v1 = document.querySelector('li.active>a');
+            const v = v1 ? v1.href : null
             if (k && v) {
                 localStorage.setItem(k, v);
                 console.log('decodeURI(k)', decodeURI(k))
