@@ -1,6 +1,8 @@
 // 全局函数
 
 (() => {
+    // 全局状态对象
+    
     const store = Vue.reactive({
         count: 7051,
     })
@@ -14,11 +16,13 @@
         count2,//会保存状态
     }
 
-
-    if (typeof navigator.serviceWorker !== 'undefined') {
-        navigator.serviceWorker.register('src/sw.js')
-    }
 })();
+
+// PWA渐进应用
+
+if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('src/sw.js')
+}
 
 (() => {
     // 书签持久化服务
