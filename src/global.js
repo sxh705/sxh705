@@ -29,7 +29,7 @@ if (typeof navigator.serviceWorker !== 'undefined') {
 
     const debounce = (fn, delay) => {
         let timer = 0
-        let d1 = (!delay) ? 500 : delay;
+        let d1 = (!delay) ? 5000 : delay;
         return () => {
             if (timer) {
                 clearTimeout(timer)
@@ -49,7 +49,7 @@ if (typeof navigator.serviceWorker !== 'undefined') {
             setTimeout(() => {
                 fn()
                 valid = true;
-            }, (!delay) ? 500 : delay)
+            }, (!delay) ? 5000 : delay)
         }
     }
 
