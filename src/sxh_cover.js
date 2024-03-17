@@ -1,3 +1,5 @@
+// bing封面
+
 let sxh_cover;
 
 {
