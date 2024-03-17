@@ -22,7 +22,7 @@
 
 (() => {
     // 书签持久化服务
-    
+
     const debounce = (fn, delay) => {
         let timer = 0
         let d1 = (!delay) ? 500 : delay;
@@ -65,7 +65,7 @@
             window.location.href = v;
             return;
         }
-        window.addEventListener('scroll', throttle(() => {
+        window.addEventListener('scroll', debounce(() => {
             const k = getK();
             const v = document.querySelector('li.active>a').href;
             if (k && v) {
