@@ -2,7 +2,7 @@
 
 (() => {
     // 全局状态对象
-    
+
     const store = Vue.reactive({
         count: 7051,
     })
@@ -60,8 +60,7 @@ if (typeof navigator.serviceWorker !== 'undefined') {
         }
         return k;
     }
-
-    window.addEventListener('load', () => {
+    (() => {
         const k = getK();
         const v = localStorage.getItem(k);
         if (v && window.location.href != v) {
@@ -79,6 +78,5 @@ if (typeof navigator.serviceWorker !== 'undefined') {
                 console.log('decodeURI(v)', decodeURI(v))
             }
         }))
-    })
-
+    })()
 })();
