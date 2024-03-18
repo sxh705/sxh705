@@ -79,12 +79,16 @@ let globalPlugin;
 
     globalPlugin = (hook, vm) => {
         hook.beforeEach(() => {
+            let k = window.location.href;
+            if (k.includes('?id')) {
+                k = k.split('?id')[0]
+                window.location.href = k;
+            }
             bookmark_listener_enable = false
         })
         hook.doneEach(() => {
             bookmark_init()
             setTimeout(() => {
-                // bookmark_init()
                 bookmark_listener_enable = true
             }, 2000)
         })
