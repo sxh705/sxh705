@@ -6,7 +6,7 @@ let sxh_cover;
     let i = 0;
     let cover = () => {
         if (!window.location.href.endsWith("/#/")) return;
-        if (document.querySelector("#jsdcsdnnewjkdnkjasj") == null) {
+        if (document.querySelector("#xh_cover_jsdc") == null) {
             // console.log("coverTO！")
             setTimeout(cover, 100);
             return;
@@ -49,12 +49,12 @@ let sxh_cover;
                 this.IsPhone();
             },
         });
-        app.mount("#jsdcsdnnewjkdnkjasj");
+        app.mount("#xh_cover_jsdc");
     };
 
     sxh_cover = (hook, vm) => {
         hook.doneEach(() => {
-            cover();
+            // cover();
         })
     }
 

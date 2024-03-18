@@ -84,7 +84,7 @@ let globalPlugin;
         hook.doneEach(() => {
             bookmark_init()
             setTimeout(() => {
-                bookmark_init()
+                // bookmark_init()
                 bookmark_listener_enable = true
             }, 2000)
         })
