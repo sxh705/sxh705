@@ -1,30 +1,23 @@
-// 全局函数
+let globalPlugin;
 
-(() => {
-    // 全局状态对象
+{
+    // 全局对象
+    const global = {
+        log: Vue.ref(''),
+        doLog: (x, y) => {
+            global.log.value += '<br>' + JSON.stringify(x) + ',' + JSON.stringify(y) + Date()
+            console.log(x, y);
+        }
+    }
+    global.doLog('logInit')
+    window.global = global
 
-    const store = Vue.reactive({
-        count: 7051,
-    })
+    // PWA渐进应用
 
-    let count1 = 3;
-    let count2 = Vue.ref(3);
-
-    window.sxhGl = {
-        store,
-        count1,//不会保存状态
-        count2,//会保存状态
+    if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('src/sw.js')
     }
 
-})();
-
-// PWA渐进应用
-
-if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('src/sw.js')
-}
-
-(() => {
     // 书签持久化服务
 
     const debounce = (fn, delay) => {
@@ -39,6 +32,7 @@ if (typeof navigator.serviceWorker !== 'undefined') {
             }
         }
     }
+
     const throttle = (fn, delay) => {
         let valid = true
         return () => {
@@ -60,23 +54,40 @@ if (typeof navigator.serviceWorker !== 'undefined') {
         }
         return k;
     }
-    (() => {
+
+    const bookmark_init = () => {
         const k = getK();
         const v = localStorage.getItem(k);
-        if (v && window.location.href != v) {
-            console.log('set: decodeURI(v)', decodeURI(v))
-            window.location.href = v;
-            return;
+        if (v) {
+            window.global.doLog('set: decodeURI(v)', decodeURI(v))
+            document.documentElement.scrollTop = v
         }
-        window.addEventListener('scroll', debounce(() => {
-            const k = getK();
-            const v1 = document.querySelector('li.active>a');
-            const v = v1 ? v1.href : null
-            if (k && v) {
-                localStorage.setItem(k, v);
-                console.log('decodeURI(k)', decodeURI(k))
-                console.log('decodeURI(v)', decodeURI(v))
-            }
-        }))
-    })()
-})();
+    }
+
+    let bookmark_listener_enable = false;
+
+    window.addEventListener('scroll', debounce(() => {
+        if (!bookmark_listener_enable) return
+        const k = getK();
+        const v = document.documentElement.scrollTop
+        window.global.doLog('decodeURI(k)', decodeURI(k))
+        window.global.doLog('decodeURI(v)', decodeURI(v))
+        if (k && v) {
+            localStorage.setItem(k, v);
+        }
+    }, 1000))
+
+    globalPlugin = (hook, vm) => {
+        hook.beforeEach(() => {
+            bookmark_listener_enable = false
+        })
+        hook.doneEach(() => {
+            bookmark_init()
+            setTimeout(() => {
+                bookmark_init()
+                bookmark_listener_enable = true
+            }, 2000)
+        })
+    }
+
+}

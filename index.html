@@ -3,73 +3,85 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover"
+    >
 
     <!-- Replace with your own title and description. -->
     <title>sxh705的个人博客</title>
-    <meta name="description" content="An awesome docsify site for publishing some content on the web.">
+    <meta
+        name="description"
+        content="An awesome docsify site for publishing some content on the web."
+    >
     <!-- Default Theme (see https://docsify.js.org/#/themes) -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link
+        rel="stylesheet"
+        href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    >
 </head>
 
 <body>
-<div id="app">加载中</div>
+    <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    
+    <script src="src/global.js"></script>
 
-<!-- my plugins -->
-<script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
-<script src="src/global.js"></script>
-<script src="src/sxh_cover.js"></script>
+    <div id="app">加载中</div>
 
-<script>
-    // Docsify Configuration (see https://docsify.js.org/#/configuration)
-    window.$docsify = {
-        coverpage: false,
-        name: 'sxh705的个人博客',
-        // Sidebar Configuration
-        auto2top: false,
-        loadSidebar: true,
-        // maxLevel: 0,
-        // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
-        subMaxLevel: 5,
-        notFoundPage: "/src/_404.md",
-        // Search Plugin Configuration
-        search: {
-            placeholder: 'Type to search',
-            noData: 'No matches found.',
-            // Headline depth, 1 - 6
-            depth: 3,
-        },
-        plugins: [
-            EditOnGithubPlugin.create("https://github.com/sxh705/sxh705.github.io/blob/main/"),
-            sxh_cover,
-        ],
-        timeUpdater: {
-            text: ">last update time: {docsify-updated}",
-            formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}:{ss}",
-            whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
-        },
-        alias: {
-            '/note/.*/_sidebar.md': '/note/_sidebar.md',
-            '/test/.*/_sidebar.md': '/test/_sidebar.md',
-            // '^(?!/note/)[a-zA-Z0-9%/]*/_sidebar.md': '/_sidebar.md',
-        }
-    };
-</script>
+    <!-- my plugins -->
 
-<!-- Required -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-<!-- Recommended -->
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
-<!-- my plugins -->
-<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.js"></script>
-<!-- 语法高亮 toml java js go c++ c python https://cdn.jsdelivr.net/npm/prismjs@1/components/ -->
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-yaml.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+    <script src="src/sxh_cover.js"></script>
+
+    <script>
+        // Docsify Configuration (see https://docsify.js.org/#/configuration)
+        window.$docsify = {
+            coverpage: false,
+            name: 'sxh705的个人博客',
+            // Sidebar Configuration
+            auto2top: false,
+            loadSidebar: true,
+            // maxLevel: 0,
+            // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
+            subMaxLevel: 5,
+            notFoundPage: "/src/_404.md",
+            // Search Plugin Configuration
+            search: {
+                placeholder: 'Type to search',
+                noData: 'No matches found.',
+                // Headline depth, 1 - 6
+                depth: 3,
+            },
+            plugins: [
+                EditOnGithubPlugin.create("https://github.com/sxh705/sxh705.github.io/blob/main/"),
+                sxh_cover,
+                globalPlugin,
+            ],
+            timeUpdater: {
+                text: ">last update time: {docsify-updated}",
+                formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}:{ss}",
+                whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
+            },
+            alias: {
+                '/note/.*/_sidebar.md': '/note/_sidebar.md',
+                '/test/.*/_sidebar.md': '/test/_sidebar.md',
+                // '^(?!/note/)[a-zA-Z0-9%/]*/_sidebar.md': '/_sidebar.md',
+            }
+        };
+    </script>
+
+    <!-- Required -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+    <!-- Recommended -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+    <!-- my plugins -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.js"></script>
+    <!-- 语法高亮 toml java js go c++ c python https://cdn.jsdelivr.net/npm/prismjs@1/components/ -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-yaml.min.js"></script>
 
 </body>
 
@@ -113,4 +125,5 @@
     /*    https://developer.mozilla.org/zh-CN/docs/Web/CSS/Child_combinator 子组合器*/
     /*    https://developer.mozilla.org/zh-CN/docs/Web/CSS/Descendant_combinator 后代选择器*/
 </style>
+
 </html>
