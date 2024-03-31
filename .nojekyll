@@ -1,1 +1,2 @@
 
+.nojekyll 就是告诉Github Pages 当前网站不是基于Jekyll 构建的，不要忽略掉下划线开头的文件和文件夹。 可见.nojekyll 主要就是用于Github Pages 这种有默认规则的网站部署平台，如果是部署在自己的服务器上，可以把它删掉。

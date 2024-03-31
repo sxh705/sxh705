@@ -2,10 +2,6 @@
 
 博客部署完成 2023.12.15
 
-* [首页](/)
-
-* [test](/test/)
-
 <https://docsify.js.org/#/zh-cn/quickstart>
 
 D:\Codes\IDEAprj\java_project_study\sxh705.github.io\
@@ -4801,4 +4797,104 @@ ctr + f 查找页面内容
 
     3. 跟进到位 确保不留隐患
 
+
+标题: (36 封私信) C#、C++、Java、Python 选择哪个好？ - 知乎 网址: https://www.zhihu.com/question/298323023/answer/510597050
+
+标题: 深扒中公教育，超级老赖全国敛财！up被骗3万咆哮怒斥！｜一郎寻奇_哔哩哔哩_bilibili 网址: https://www.bilibili.com/video/BV1Kx4y1D7he/?spm_id_from=333.337.search-card.all.click&vd_source=6fee5888cff5ab9e8fd8044b2f953fa7
+
+C# 好处
+
+1. 方向多
+
+2. 加班少
+
+3. 工作比较稳定
+
+坏处
+
+1. 工作机会少
+
+2. 工资比较低
+
+3. 不能进入大厂
+
+java 好处
+
+1. 工作机会多
+
+2. 有机会进入大厂
+
+3. 工资比较高
+
+坏处
+
+1. 方向单一
+
+2. 加班多
+
+3. 工作不稳定
+
+如何评价高三八班干呕男孩? - 安好心的回答 - 知乎
+https://www.zhihu.com/question/649248895/answer/3442507191
+
+标题: (37 封私信) 狠人的本质是什么? - 知乎 网址: https://www.zhihu.com/question/622670900/answer/3438007127
+
+标题: 如何对WSL2进行备份与还原 - 知乎 网址: https://zhuanlan.zhihu.com/p/536686989
+
+有哪些高效的复盘方法? - Luxenius的回答 - 知乎 https://www.zhihu.com/question/376252283/answer/3432330916
+
+nvm管理node版本
+
+标题: win10 node版本管理工具 nvm-window - 掘金 网址: https://juejin.cn/post/7037370130975686687
+
+标题: Releases · coreybutler/nvm-windows 网址: https://github.com/coreybutler/nvm-windows
+
+中午 睡觉 休息 喝水
+
+下午 17.00 跑步
+
+晚上 吃饭 饺子
+
+别睡了 直接学习 java后端 vue前端 学习他人代码
+
+你有没有什么忠告想告诉刚刚毕业的年轻人？ - 中老年Java民工的回答 - 知乎
+https://www.zhihu.com/question/631514882/answer/3307532247
+
+个人作为中年大叔，给年轻人的忠告如下：
+
+1.勤奋不一定能暴富，但是脱贫是可以的。工作二十年来，身边勤奋的同龄人里，混得不一定辉煌腾达，但是都过得还可以。
+
+2.娶妻当娶贤，妻贤夫祸少。身边有因为老婆给的压力太大而走了人生弯路的，也有已经离婚的，老婆不漂亮但是贤慧的，家庭基本都还是很和睦的。
+
+3.选对行业很重要，选择对了，才有坚持的意义，而坚持持续深耕相应的行业，轻松跑赢50%的同行，跑赢80%也是不难的。
+
+4.对父母要孝顺，但不要愚孝，父母辈如果是普通人，那么父母的意见仅供参考，要有自己的独立思考能力。尤其是在人生大事的重要选择上，可以考虑父母的想法建议，但不要迷信父母的想法要求，他们对新环境新事物的见识不一定有自己多。
+
+5.跟对领导很重要，工作中的信任感最重要，建立了信任感，才能降低工作沟通成本，才能更高效的决策和执行。在建立信任感之前，对领导说的不要全信也不要都不信，要分析观察，看哪些是真心诚意的话，哪些是专业话术。尤其是在利益分配上，领导说辛辛苦苦为你争取了更多奖金，这话可能是真的，也可能只是他对每个下属的话术而已，因为自己接触不到更多信息，有可能是领导桥接了事实，让你相信他给出的结论。
+
+6.买点意外消费险很有必要，人生不知道意外哪天回来，前不久我打过交道的同事不到40岁就意外不在了，留下父母老婆和两个年幼的孩子，好在公司福利有统一的保险，赔偿了一百多万，对家庭家庭度过难关发挥了重要作用。
+
+12月份要不要辞职? - 中老年Java民工的回答 - 知乎
+https://www.zhihu.com/question/630383911/answer/3293963001
+
+怎样吃三年苦后能年入50+w？ - 中老年Java民工的回答 - 知乎
+https://www.zhihu.com/question/648529544/answer/3443289998
+
+标题: (38 封私信) 中老年Java民工 - 知乎 网址: https://www.zhihu.com/people/oldjava/answers/by_votes?page=14
+
+你人生中太晚明白的道理是什么？ - 硅谷IT胖子的回答 - 知乎
+https://www.zhihu.com/question/470076571/answer/3448855925
+
+美团面试：接口被恶意狂刷，怎么办？ - 李明阳的回答 - 知乎
+https://www.zhihu.com/question/599345004/answer/3025281705
+
+标题: 互联网2vc是什么意思_百度知道 网址: https://zhidao.baidu.com/question/264616440405100885.html
+
+标题: (38 封私信) 普通人没经过训练，在生死存亡之际，能不能拿命在 20 分钟跑完 5 公里？ - 知乎 网址: https://www.zhihu.com/question/421947026
+
+标题: IPv6 测试 网址: https://test-ipv6.com/
+
+标题: 解决Spring Boot异常返回页面中文乱码问题 - 猪脚踏浪 - 博客园 网址: https://www.cnblogs.com/zsg88/articles/15934181.html
+
+标题: boot - 覆盖第三方jar包中的一个类_springboot 覆盖jar class-CSDN博客 网址: https://blog.csdn.net/u013887008/article/details/118281762
 

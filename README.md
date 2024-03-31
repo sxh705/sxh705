@@ -1,3 +1,3 @@
-# sxh的个人主页
+README.md是每个目录的首页
 
-<input oninput="this.value=='7051'?location.href+='note/':0"></input>
+# sxh的个人博客
