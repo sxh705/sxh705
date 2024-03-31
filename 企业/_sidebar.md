@@ -3,4 +3,6 @@
 
 * [首页_企业](/企业/)
 
-* [慕慕商城](/note/Java/day1_imooc_mall.md)
+* [Java_总览](/企业/src/main/Java_总览.md)
+
+* [Java_项目_慕慕商城](/企业/src/main/Java_项目_慕慕商城.md)
