@@ -22,6 +22,21 @@
 
     <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
     <script>
+        {
+            let password_check = () => {
+                let store_prefix = 'xh_password';
+                let password = globalSetting.xh_password
+                let passwordInput = localStorage.getItem(store_prefix)
+                if (password != passwordInput) {
+                    let passwordNow = prompt("请输入密码")
+                    localStorage.setItem(store_prefix, passwordNow)
+                    password_check()
+                } else {
+                    return;
+                }
+            }
+            password_check()
+        }
         window.$docsify = {
             coverpage: false,
             name: globalSetting.xh_name,
