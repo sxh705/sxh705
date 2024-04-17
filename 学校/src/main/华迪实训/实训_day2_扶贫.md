@@ -206,7 +206,7 @@ controller的postmapping方法中的body参数
 ```
 
 gitlab令牌：到2025.4.10
-glpat-NVg7F-5eQ8FxxGwVd1vL
+(base64) Z2xwYXQtTlZnN0YtNWVROEZ4eEd3VmQxdkw=
 
 gitlab仓库：
 https://gitlab.com/sxh7051/fp_plat.git
